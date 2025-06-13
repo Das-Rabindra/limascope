@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+overrides:
+  esbuild@<=0.24.2: '>=0.25.0'
+
+importers:
+
+  .:
+    dependencies:
+      '@fontsource-variable/playfair-display':
+        specifier: ^5.2.6
+        version: 5.2.6
+    devDependencies:
+      dozzle:
+        specifier: workspace:*
+        version: link:..
+
+packages:
+
+  '@fontsource-variable/playfair-display@5.2.6':
+    resolution: {integrity: sha512-Uedpo4WwsWtobi1KMYGm9tlKcZJcD18EiBtPWhbbccT2u58qM7vwkOZGdrmdWVDhcEhjwNrqRUyZijwIFtsCcQ==}
+
+snapshots:
+
+  '@fontsource-variable/playfair-display@5.2.6': {}

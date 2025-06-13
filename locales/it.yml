@@ -1,0 +1,134 @@
+toolbar:
+  clear: Pulisci
+  download: Scarica
+  search: Cerca
+  show: Mostra solo {std}
+  show-all: Mostra tutto
+  stop: Stop
+  start: Start
+  restart: Restart
+  show-hostname: Mostra nome host
+  show-container-name: Mostra nome container
+  shell: Shell
+  attach: Collega
+action:
+  copy-log: Copia log
+  copy-link: Copia permalink
+  see-in-context: Vedi nel contesto
+  show-details: Mostra dettagli
+label:
+  containers: Container
+  container: Nessun container | 1 container | {count} container
+  service: Nessun servizio | 1 servizio | {count} servizi
+  services: Servizi
+  running-containers: Container in esecuzione
+  all-containers: Tutti i Container
+  host: Host
+  hosts: Hosts
+  password: Password
+  username: Username
+  container-name: Nome Container
+  status: Stato
+  created: Creato
+  avg-cpu: CPU (%)
+  avg-mem: MEM (%)
+  pinned: Fissato
+  per-page: Righe per pagina
+  host-menu: Host e Container
+  swarm-menu: Servizi e Stack
+  group-menu: Gruppi Personalizzati
+  no-logs: Il container non ha ancora log
+  show-all-containers: Mostra tutti i container
+  collapse-all: Comprimi tutto
+tooltip:
+  search: Ricerca container (⌘ + k, ⌃k)
+  pin-column: Blocca come colonna
+  merge-services: Unisci tutti i servizi in una vista
+  merge-containers: Unisci tutti i container in una vista
+  merge-hosts: Unisci tutti i container su questo host in una vista
+error:
+  page-not-found: Questa pagina non esiste
+  invalid-auth: Username o password non valide
+  logs-skipped: Mostra {total} voci nascoste
+  container-not-found: Container non trovato
+  events-stream:
+    title: Errore inaspettato
+    message: >-
+      Dozzle UI non è stato in grado di connettersi alle API. Controlla la tua configurazione di rete. Se stai utilizzando un reverse proxy, assicurati di averlo configurato correttamente.
+  events-timeout:
+    title: Qualcosa non è corretto
+    message: >-
+      Dozzle UI timed out durante la connessione alle API. Controlla la configurazione di rete e riprova.
+alert:
+  redirected:
+    title: Reindirizzamento ad un nuovo container
+    message: Dozzle si è reindirizzato automaticamente ad un nuovo container {containerId}.
+  similar-container-found:
+    title: Trovato un Container simile
+    message: >-
+      Dozzle ha trovato un Container simile {containerId} in esecuzione sullo stesso Host e passerà automaticamente ad esso se non premi 'Cancel'.
+title:
+  page-not-found: Pagina non trovata
+  login: Autenticazione richiesta
+  dashboard: 1 container | {count} container
+  settings: Impostazioni
+button:
+  logout: Logout
+  login: Login
+  settings: Impostazioni
+  cancel: Annulla
+  redirect: Reindirizza
+placeholder:
+  search-containers: Ricerca container (⌘ + k, ⌃k)
+  search: Cerca
+settings:
+  help-support: >
+    Per favore sostieni Dozzle donando o sponsorizzandoci su GitHub. I tuoi contributi ci aiutano a migliorare Dozzle per tutti. Grazie! 🙏🏼
+  display: Visualizza
+  locale: Sovrascrivi Lingua
+  small-scrollbars: Usa una scrollbars più piccola
+  show-timesamps: Visualizza timestamp
+  soft-wrap: Soft Wrap
+  datetime-format: Sovrascrivi data e formato dell'ora
+  font-size: Grandezza del Font da usare nei log
+  color-scheme: Tema colori
+  options: Opzioni
+  show-stopped-containers: Visualizza i container arrestati
+  about: Circa
+  search: Abilita la ricerca attraverso Dozzle
+  using-version: Stai utilizzando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  update-available: >-
+    Nuova versione disponibile! Aggiorna a <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
+  show-std: Visualizza stdout e stderr
+  automatic-redirect: Reindirizza automaticamente al nuovo container con lo stesso nome
+  compact: Abilita la modalità compatta per i log
+  log:
+    preview: Questa è un'anteprima dei log
+    warning: Un log di avviso appare così
+    complex: Questa è un log complesso in formato json
+    simple: Questo è un messaggio molto molto lungo che dovrebbe andare a capo automaticamente. Disabilitando il soft wrap si può disabilitare questa funzione. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: Questo è un messaggio di errore su più righe
+      middle-line: una seconda riga
+      end-line: e infine una terza riga.
+releases:
+  features: nuova funzione | {count} funzioni
+  bugFixes: nuovo bug fix | {count} fix
+  breaking: nuovo breaking change | {count} breaking change
+  three_parts: "{first}, {second} e {third}"
+  two_parts: "{first} e {second}"
+  latest: Ultimo
+  no_releases: Stai utilizzando l'ultima versione
+log_actions:
+  copy_log: Copia log
+  jump_to_context: Vai a
+toasts:
+  copied:
+    title: Copiato
+    message: Log copiato nella clipboard
+analytics:
+  creating_table: Creazione tabella temporanea...
+  downloading: Recupero dei log dei container... ({size})
+  evaluating_query: Valutazione della query...
+  total_records: Totale {count} record.
+  showing_first: Mostrati i primi {count}.

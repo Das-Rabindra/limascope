@@ -1,0 +1,134 @@
+toolbar:
+  clear: Limpar
+  download: Baixar
+  search: Pesquisar
+  show: Mostrar {std}
+  show-all: Mostrar tudo
+  stop: Parar
+  start: Iniciar
+  restart: Reiniciar
+  show-hostname: Mostrar nome do host
+  show-container-name: Mostrar nome do container
+  shell: Shell
+  attach: Anexar
+action:
+  copy-log: Copiar log
+  copy-link: Copiar permalink
+  see-in-context: Ver no contexto
+  show-details: Mostrar detalhes
+label:
+  containers: Contêineres
+  container: Nenhum container | 1 container | {count} containers
+  service: Nenhum serviço | 1 serviço | {count} serviços
+  services: Serviços
+  running-containers: Containers em Execução
+  all-containers: Todos os Containers
+  host: Host
+  hosts: Hosts
+  password: Senha
+  username: Usuário
+  container-name: Nome do Container
+  status: Status
+  created: Criado
+  avg-cpu: Média CPU (%)
+  avg-mem: Média MEM (%)
+  pinned: Fixado
+  per-page: Linhas por página
+  host-menu: Hosts e Containers
+  swarm-menu: Serviços e Stacks
+  group-menu: Grupos Personalizados
+  no-logs: O container ainda não tem logs
+  show-all-containers: Mostrar todos os containers
+  collapse-all: Recolher tudo
+tooltip:
+  search: Pesquisar containers (⌘ + k, ⌃k)
+  pin-column: Fixar como coluna
+  merge-services: Mesclar todos os serviços em uma visualização
+  merge-containers: Mesclar todos os containers em uma visualização
+  merge-hosts: Mesclar todos os containers neste host em uma visualização
+error:
+  page-not-found: Esta página não existe
+  invalid-auth: Usuário ou senha inválidos
+  logs-skipped: Mostrar {total} entradas ocultas
+  container-not-found: Container não encontrado
+  events-stream:
+    title: Erro Inesperado
+    message: >-
+      A interface do Dozzle não conseguiu se conectar à API. Verifique suas configurações de rede. Se você estiver usando um proxy reverso, certifique-se de que ele esteja configurado corretamente.
+  events-timeout:
+    title: Algo não está certo
+    message: >-
+      A interface do Dozzle atingiu o tempo limite ao conectar-se à API. Verifique a conexão de rede e tente novamente.
+alert:
+  redirected:
+    title: Redirecionado para novo container
+    message: O Dozzle redirecionou você automaticamente para o novo container {containerId}.
+  similar-container-found:
+    title: Container similar encontrado
+    message: >-
+      O Dozzle encontrou um container similar {containerId} que está em execução no mesmo host e mudará automaticamente para ele, a menos que você clique em 'Cancelar'.
+title:
+  page-not-found: Página não encontrada
+  login: Autenticação Requerida
+  dashboard: 1 container | {count} containers
+  settings: Configurações
+button:
+  logout: Sair
+  login: Entrar
+  settings: Configurações
+  cancel: Cancelar
+  redirect: Redirecionar
+placeholder:
+  search-containers: Pesquisar containers (⌘ + k, ⌃k)
+  search: Pesquisar
+settings:
+  help-support: >
+    Por favor, apoie o Dozzle doando ou nos patrocinando no GitHub. Suas contribuições nos ajudam a melhorar o Dozzle para todos. Obrigado! 🙏🏼
+  display: Exibição
+  locale: Sobrescrever idioma
+  small-scrollbars: Usar barras de rolagem menores
+  show-timesamps: Mostrar marcas de tempo
+  soft-wrap: Quebrar linhas automaticamente
+  datetime-format: Sobrescrever formato de data e hora
+  font-size: Tamanho da fonte para logs
+  color-scheme: Esquema de cores
+  options: Opções
+  show-stopped-containers: Mostrar containers parados
+  about: Sobre
+  search: Habilitar pesquisa com Dozzle usando
+  using-version: Você está usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  update-available: >-
+    Nova versão disponível! Atualize para <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
+  show-std: Mostrar rótulos stdout e stderr
+  automatic-redirect: Redirecionar automaticamente para novos containers com o mesmo nome
+  compact: Ativar modo compacto para logs
+  log:
+    preview: Esta é uma prévia dos logs
+    warning: Um log de aviso se parece com isto
+    complex: Esta é uma entrada de log complexa como json
+    simple: Esta é uma mensagem muito longa que seria quebrada por padrão. Desabilitar quebras suaves desabilitaria isso. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: Esta é uma mensagem de erro multi-linha
+      middle-line: com uma segunda linha
+      end-line: e finalmente a terceira linha.
+releases:
+  features: uma nova funcionalidade | {count} funcionalidades
+  bugFixes: uma correção de bug | {count} correções
+  breaking: uma mudança incompatível | {count} mudanças incompatíveis
+  three_parts: "{first}, {second} e {third}"
+  two_parts: "{first} com {second}"
+  latest: Mais recente
+  no_releases: Você tem a versão mais recente
+log_actions:
+  copy_log: Copiar log
+  jump_to_context: Ir para contexto
+toasts:
+  copied:
+    title: Copiado
+    message: Log copiado para a área de transferência
+analytics:
+  creating_table: Criando tabela temporária...
+  downloading: Buscando logs dos containers... ({size})
+  evaluating_query: Avaliando consulta...
+  total_records: Total de {count} registros.
+  showing_first: Mostrando os primeiros {count}.

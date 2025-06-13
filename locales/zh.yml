@@ -1,0 +1,134 @@
+toolbar:
+  clear: 清除
+  download: 下载
+  search: 搜索
+  show: 显示 {std}
+  show-all: 显示全部
+  stop: 停止
+  start: 启动
+  restart: 重启
+  show-hostname: 显示主机名
+  show-container-name: 显示容器名称
+  shell: 终端
+  attach: 附加
+action:
+  copy-log: 复制日志
+  copy-link: 复制永久链接
+  see-in-context: 在上下文中查看
+  show-details: 显示详细信息
+label:
+  containers: 容器
+  container: 无容器 | 1 容器 | {count} 容器
+  service: 无服务 | 1 个服务 | {count} 个服务
+  services: 服务
+  running-containers: 运行中的容器
+  all-containers: 所有容器
+  no-logs: 容器尚无日志
+  show-all-containers: 显示所有容器
+  collapse-all: 折叠全部
+  host: 主机
+  hosts: 主机
+  password: 密码
+  username: 用户名
+  container-name: 容器名称
+  status: 状态
+  created: 创建时间
+  avg-cpu: 平均CPU (%)
+  avg-mem: 平均MEM (%)
+  pinned: 固定
+  per-page: 每页行数
+  host-menu: 主机和容器
+  swarm-menu: 服务和堆栈
+  group-menu: 自定义组
+tooltip:
+  search: 搜索 (⌘ + k, ⌃k)
+  pin-column: 固定为列
+  merge-services: 合并所有服务到一个视图
+  merge-containers: 合并所有容器到一个视图
+  merge-hosts: 合并此主机上的所有容器到一个视图
+error:
+  page-not-found: 此页面不存在。
+  invalid-auth: 用户名和密码无效。
+  logs-skipped: 显示 {total} 个隐藏条目
+  container-not-found: 容器未找到。
+  events-stream:
+    title: 意外错误
+    message: >-
+      Dozzle UI无法连接到API。请检查您的网络设置。 如果您使用反向代理，请确保其正确配置。
+  events-timeout:
+    title: 出了点问题
+    message: >-
+      Dozzle UI在连接到API时超时。请检查网络连接并重试。
+alert:
+  redirected:
+    title: 重定向到新容器
+    message: Dozzle自动将您重定向到新容器 {containerId}。
+  similar-container-found:
+    title: 找到相似的容器
+    message: >-
+      Dozzle发现了一个相似的容器 {containerId}，它在同一主机上运行。您想切换到它吗？
+title:
+  page-not-found: 页面未找到
+  login: 需要身份验证
+  dashboard: 1 容器 | {count} 容器
+  settings: 设置
+button:
+  logout: 退出
+  login: 登录
+  settings: 设置
+  cancel: 取消
+  redirect: 重定向
+placeholder:
+  search-containers: 搜索容器 (⌘ + k, ⌃k)
+  search: 搜索
+settings:
+  help-support: >
+    请通过在 GitHub 上捐赠或赞助我们来支持 Dozzle。您的贡献帮助我们为所有人改进 Dozzle。谢谢！ 🙏🏼
+  display: 显示
+  locale: 显示语言
+  small-scrollbars: 使用较小的滚动条
+  show-timesamps: 显示时间戳
+  soft-wrap: 断行
+  datetime-format: 自定义日期和时间格式
+  font-size: 字体大小
+  color-scheme: 颜色方案
+  options: 选项
+  show-stopped-containers: 显示已停止的容器
+  about: 关于
+  search: 使用Dozzle启用搜索
+  using-version: 您正在使用<a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}。
+  update-available: >-
+    新版本可用！更新到 <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>。
+  show-std: 显示stdout和stderr标签
+  automatic-redirect: 自动重定向到同名的新容器
+  compact: 紧凑模式
+  log:
+    preview: 这是默认日志样式
+    warning: 警告日志看起来像这样
+    complex: 这是一个复杂的JSON格式日志
+    simple: 这是一个非常非常长的消息，默认情况下会自动换行。禁用软换行将禁用此功能。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: 这是一个多行错误消息
+      middle-line: 带有第二行
+      end-line: 最后是第三行
+releases:
+  features: 一个新功能 | {count} 个新功能
+  bugFixes: 一个错误修复 | {count} 个修复
+  breaking: 一个重大变更 | {count} 个重大变更
+  three_parts: "{first}, {second} 和 {third}"
+  two_parts: "{first} 与 {second}"
+  latest: 最新
+  no_releases: 您拥有最新版本
+log_actions:
+  copy_log: 复制日志
+  jump_to_context: 跳转到上下文
+toasts:
+  copied:
+    title: 已复制
+    message: 日志已复制到剪贴板
+analytics:
+  creating_table: 正在创建临时表...
+  downloading: 正在获取容器日志... ({size})
+  evaluating_query: 正在评估查询...
+  total_records: 总共 {count} 条记录。
+  showing_first: 显示前 {count} 条。

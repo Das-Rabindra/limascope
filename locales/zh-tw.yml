@@ -1,0 +1,137 @@
+toolbar:
+  clear: 清除
+  download: 下載
+  search: 搜尋
+  show: 僅顯示 {std}
+  show-all: 顯示全部
+  stop: 停止
+  start: 啟動
+  restart: 重新啟動
+  show-hostname: 顯示主機名稱
+  show-container-name: 顯示容器名稱
+  shell: 終端機
+  attach: 附加
+action:
+  copy-log: 複製日誌
+  copy-link: 複製永久連結
+  see-in-context: 在內容中查看
+  show-details: 顯示詳細資訊
+label:
+  containers: 容器
+  container: 無容器 | 1 個容器 | {count} 個容器
+  service: 無服務 | 1 個服務 | {count} 個服務
+  services: 服務
+  running-containers: 運作中的容器
+  all-containers: 所有容器
+  no-logs: 容器尚無日誌
+  show-all-containers: 顯示所有容器
+  collapse-all: 摺疊全部
+  host: 主機
+  hosts: 主機
+  password: 密碼
+  username: 使用者名稱
+  container-name: 容器名稱
+  status: 狀態
+  created: 建立時間
+  avg-cpu: 平均 CPU 使用率 (%)
+  avg-mem: 平均記憶體使用率 (%)
+  pinned: 已釘選
+  per-page: 每頁列數
+  host-menu: 主機和容器
+  swarm-menu: 服務和堆疊
+  group-menu: 自訂群組
+tooltip:
+  search: 搜尋容器 (⌘ + k, ⌃k)
+  pin-column: 釘選為欄位
+  merge-services: 將所有服務合併至單一檢視
+  merge-containers: 將所有容器合併至單一檢視
+  merge-hosts: 將此主機上的所有容器合併至單一檢視
+error:
+  page-not-found: 此頁面不存在
+  invalid-auth: 使用者名稱或密碼不正確
+  logs-skipped: 顯示 {total} 個隱藏項目
+  container-not-found: 找不到容器
+  events-stream:
+    title: 意外錯誤
+    message: >-
+      Dozzle UI 無法連線至 API。請檢查您的網路設定。
+      如果您使用反向代理伺服器，請確認其設定正確。
+  events-timeout:
+    title: 發生錯誤
+    message: >-
+      Dozzle UI 連線至 API 時逾時。請檢查網路連線後再試一次。
+alert:
+  redirected:
+    title: 已重新導向至新容器
+    message: Dozzle 已自動將您重新導向至新容器 {containerId}。
+  similar-container-found:
+    title: 找到相似的容器
+    message: >-
+      Dozzle 在相同主機上找到一個相似的容器 {containerId}，
+      除非您點選「取消」，否則系統將自動切換至該容器。
+title:
+  page-not-found: 找不到頁面
+  login: 需要身份驗證
+  dashboard: 1 個容器 | {count} 個容器
+  settings: 設定
+button:
+  logout: 登出
+  login: 登入
+  settings: 設定
+  cancel: 取消
+  redirect: 重新導向
+placeholder:
+  search-containers: 搜尋容器 (⌘ + k, ⌃k)
+  search: 搜尋
+settings:
+  help-support: >
+    請透過在 GitHub 上捐款或贊助我們來支持 Dozzle。您的貢獻幫助我們為所有人改進 Dozzle。謝謝！ 🙏🏼
+  display: 顯示
+  locale: 變更語言
+  small-scrollbars: 使用較小的捲軸
+  show-timesamps: 顯示時間戳記
+  soft-wrap: 自動換行
+  datetime-format: 變更日期與時間格式
+  font-size: 日誌字型大小
+  color-scheme: 顏色設定
+  options: 選項
+  show-stopped-containers: 顯示已停止的容器
+  about: 關於
+  search: 啟用 Dozzle 搜尋功能
+  using-version: 您目前使用的是 <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}。
+  update-available: >-
+    有新版本可用！請更新至 <a href="{href}" target="_blank"
+    rel="noreferrer noopener">{nextVersion}</a>。
+  show-std: 顯示標準輸出(stdout)與標準錯誤(stderr)標籤
+  automatic-redirect: 自動重新導向至相同名稱的新容器
+  compact: 啟用緊湊模式
+  log:
+    preview: 這是日誌的預覽
+    warning: 警告日誌看起來是這樣的
+    complex: 這是一筆 JSON 格式的複雜日誌項目
+    simple: 這是一段非常長的訊息，預設情況下會自動換行。停用自動換行後便不會換行。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: 這是一段多行錯誤訊息
+      middle-line: 這是第二行
+      end-line: 最後是第三行。
+releases:
+  features: 一項新功能 | {count} 項新功能
+  bugFixes: 一項錯誤修正 | {count} 項修正
+  breaking: 一項重大變更 | {count} 項重大變更
+  three_parts: "{first}、{second} 與 {third}"
+  two_parts: "{first} 與 {second}"
+  latest: 最新版本
+  no_releases: 您已經是最新版本
+log_actions:
+  copy_log: 複製日誌
+  jump_to_context: 跳至相關內容
+toasts:
+  copied:
+    title: 已複製
+    message: 日誌已複製到剪貼簿
+analytics:
+  creating_table: 正在建立臨時資料表...
+  downloading: 正在取得容器日誌... ({size})
+  evaluating_query: 正在評估查詢...
+  total_records: 共計 {count} 筆記錄。
+  showing_first: 顯示前 {count} 筆。

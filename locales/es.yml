@@ -1,0 +1,134 @@
+toolbar:
+  clear: Limpiar
+  download: Descargar
+  search: Buscar
+  show: Mostrar {std}
+  show-all: Mostrar todo
+  stop: Detener
+  start: Iniciar
+  restart: Reiniciar
+  show-hostname: Mostrar nombre del host
+  show-container-name: Mostrar nombre del contenedor
+  shell: Shell
+  attach: Conectar
+action:
+  copy-log: Copiar registro
+  copy-link: Copiar enlace permanente
+  see-in-context: Ver en contexto
+  show-details: Mostrar detalles
+label:
+  containers: Contenedores
+  container: No contenedores | 1 contenedor | {count} contenedores
+  service: Sin servicios | 1 servicio | {count} servicios
+  services: Servicios
+  running-containers: Contenedores en ejecución
+  all-containers: Todos los contenedores
+  host: Host
+  hosts: Hosts
+  password: Contraseña
+  username: Nombre de usuario
+  container-name: Nombre del contenedor
+  status: Estado
+  created: Creado
+  avg-cpu: Promedio de CPU (%)
+  avg-mem: Promedio de MEM (%)
+  pinned: Fijado
+  per-page: Filas por página
+  host-menu: Hosts y Contenedores
+  swarm-menu: Servicios y Stacks
+  group-menu: Grupos Personalizados
+  no-logs: El contenedor aún no tiene registros
+  show-all-containers: Mostrar todos los contenedores
+  collapse-all: Colapsar todo
+tooltip:
+  search: Buscar contenedores (⌘ + K, CTRL + K)
+  pin-column: Anclar como columna
+  merge-services: Fusionar todos los servicios en una vista
+  merge-containers: Fusionar todos los contenedores en una vista
+  merge-hosts: Fusionar todos los contenedores de este host en una vista
+error:
+  page-not-found: Esta página no existe.
+  invalid-auth: El nombre de usuario y la contraseña no son válidos.
+  logs-skipped: Mostrar {total} entradas ocultas
+  container-not-found: Contenedor no encontrado.
+  events-stream:
+    title: Error inesperado
+    message: >-
+      Dozzle UI no pudo conectar con la API. Por favor, compruebe la configuración de su red. Si está utilizando un proxy inverso, por favor, asegúrese de que está configurado correctamente.
+  events-timeout:
+    title: Algo no está bien
+    message: >-
+      Dozzle UI se agotó el tiempo de espera al conectarse a la API. Por favor, compruebe la conexión de red y vuelva a intentarlo.
+alert:
+  redirected:
+    title: Redirigido a nuevo contenedor
+    message: Dozzle le redirigió automáticamente al nuevo contenedor {containerId}.
+  similar-container-found:
+    title: Contenedor similar encontrado
+    message: >-
+      Dozzle encontró un contenedor similar {containerId} que se está ejecutando en el mismo host. ¿Quieres cambiar a él?
+title:
+  page-not-found: Página no encontrada
+  login: Autenticación requerida
+  dashboard: 1 contenedor | {count} contenedores
+  settings: Configuración
+button:
+  logout: Cerrar la sesión
+  login: Iniciar sesión
+  settings: Configuración
+  cancel: Cancelar
+  redirect: Redirigir
+placeholder:
+  search-containers: Buscar contenedores (⌘ + K, CTRL + K)
+  search: Buscar
+settings:
+  help-support: >
+    Por favor, apoya a Dozzle donando o patrocinándonos en GitHub. Tus contribuciones nos ayudan a mejorar Dozzle para todos. ¡Gracias! 🙏🏼
+  display: Vista
+  locale: Sobrescribir idioma
+  small-scrollbars: Utilizar barras de desplazamiento más pequeñas
+  show-timesamps: Mostrar marcas de tiempo
+  soft-wrap: Líneas de texto con ajuste suave
+  datetime-format: Sobrescribir el formato de fecha y hora
+  font-size: Tamaño de letra a utilizar para los registros
+  color-scheme: Esquema de colores
+  options: Opciones
+  show-stopped-containers: Mostrar contenedores parados
+  about: Acerca de
+  search: Activar la búsqueda con Dozzle mediante
+  using-version: Estás usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  update-available: >-
+    ¡La nueva versión está disponible! Actualizar a la <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
+  show-std: Mostrar etiquetas de salida estándar y salida de error estándar
+  automatic-redirect: Redireccionar automáticamente a nuevos contenedores con el mismo nombre
+  compact: Modo compacto
+  log:
+    preview: Esta es una vista previa de los registros
+    warning: Un registro de advertencia se ve así
+    complex: Esta es una entrada de registro compleja en formato json
+    simple: Este es un mensaje muy largo que por defecto se ajustará. Desactivar los ajustes suaves deshabilitará esto. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: Este es un mensaje de error de múltiples líneas
+      middle-line: con una segunda línea
+      end-line: y finalmente una tercera línea.
+releases:
+  features: una nueva característica | {count} características
+  bugFixes: una corrección de error | {count} correcciones
+  breaking: un cambio importante | {count} cambios importantes
+  three_parts: "{features}, {bugFixes} y {breaking}"
+  two_parts: "{features} y {bugFixes}"
+  latest: Último
+  no_releases: No hay lanzamientos
+log_actions:
+  copy_log: Copiar registro
+  jump_to_context: Ir al contexto
+toasts:
+  copied:
+    title: Copiado
+    message: Registro copiado al portapapeles
+analytics:
+  creating_table: Creando tabla temporal...
+  downloading: Obteniendo registros de contenedores... ({size})
+  evaluating_query: Evaluando consulta...
+  total_records: Total {count} registros.
+  showing_first: Mostrando los primeros {count}.

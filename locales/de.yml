@@ -1,0 +1,134 @@
+toolbar:
+  clear: Leeren
+  download: Herunterladen
+  search: Suchen
+  show: Zeige nur {std}
+  show-all: Zeige alle Streams
+  stop: Stop
+  start: Start
+  restart: Neustarten
+  show-hostname: Host-Name anzeigen
+  show-container-name: Container-Name anzeigen
+  shell: Shell
+  attach: Anhängen
+action:
+  copy-log: Log kopieren
+  copy-link: Permalink kopieren
+  see-in-context: Im Kontext anzeigen
+  show-details: Details anzeigen
+label:
+  containers: Container
+  container: Keine Container | 1 Container | {count} Container
+  service: Kein Service | 1 Service | {count} Services
+  services: Service
+  running-containers: Laufende Container
+  all-containers: Alle Container
+  host: Host
+  hosts: Hosts
+  password: Passwort
+  username: Benutzername
+  container-name: Container Name
+  status: Status
+  created: Erstellt
+  avg-cpu: Avg. CPU (%)
+  avg-mem: Avg. MEM (%)
+  pinned: Angepinnt
+  per-page: Zeilen pro Seite
+  host-menu: Hosts und Container
+  swarm-menu: Services und Stacks
+  group-menu: Benutzerdefinierte Gruppen
+  no-logs: Container hat noch keine Logs
+  show-all-containers: Zeige alle Container
+  collapse-all: Alle einklappen
+tooltip:
+  search: Suche Container (⌘ + k, ⌃k)
+  pin-column: Als Spalte anheften
+  merge-services: Services zusammenführen
+  merge-containers: Container zusammenführen
+  merge-hosts: Alle Container auf diesem Host in einer Ansicht zusammenführen
+error:
+  page-not-found: Diese Seite existiert nicht.
+  invalid-auth: Benutzername und Passwort sind ungültig.
+  logs-skipped: Zeige {total} versteckte Einträge
+  container-not-found: Container nicht gefunden.
+  events-stream:
+    title: Unerwarteter Fehler
+    message: >-
+      Das Dozzle UI konnte keine Verbindung zur API herstellen. Bitte überprüfen Sie Ihre Netzwerkeinstellungen. Wenn Sie einen Reverse-Proxy verwenden, stellen Sie sicher, dass er korrekt konfiguriert ist.
+  events-timeout:
+    title: Etwas stimmt nicht
+    message: >-
+      Das Dozzle UI hat beim Verbinden mit der API eine Zeitüberschreitung. Bitte überprüfen Sie die Netzwerkverbindung und versuchen Sie es erneut.
+alert:
+  redirected:
+    title: Zu neuem Container umgeleitet
+    message: Dozzle hat dich automatisch zu dem Container {containerId} umgeleitet.
+  similar-container-found:
+    title: Ähnlicher Container gefunden
+    message: >-
+      Dozzle hat einen ähnlichen Container {containerId} gefunden, der auf dem gleichen Host ausgeführt wird. Möchtest Du zu ihm wechseln?
+title:
+  page-not-found: Seite nicht gefunden
+  login: Authentifizierung erforderlich
+  dashboard: 1 Container | {count} Container
+  settings: Einstellungen
+button:
+  logout: Ausloggen
+  login: Anmeldung
+  settings: Einstellungen
+  cancel: Abbruch
+  redirect: Umleiten
+placeholder:
+  search-containers: Suche Container (⌘ + k, ⌃k)
+  search: Suche
+settings:
+  help-support: >
+    Bitte unterstützen Sie Dozzle durch Spenden oder Sponsoring auf GitHub. Ihre Beiträge helfen uns, Dozzle für alle zu verbessern. Vielen Dank! 🙏🏼
+  display: Anzeige
+  locale: Sprache überschreiben
+  small-scrollbars: Verwende kleinere Scrollbars
+  show-timesamps: Zeige Zeitstempel
+  soft-wrap: Zeilenumbruch
+  datetime-format: Datums- und Zeitformat
+  font-size: Schriftgröße für Logs
+  color-scheme: Farbschema
+  options: Optionen
+  show-stopped-containers: Zeige gestoppte Container
+  about: Über
+  search: Aktiviere die Suche mit Dozzle mit
+  using-version: Du verwendest <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  update-available: >-
+    Eine neue Version ist verfügbar! Aktualisiere auf <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
+  show-std: Zeige stdout und stderr Labels
+  automatic-redirect: Automatische Weiterleitung zu neuen Containern mit demselben Namen
+  compact: Aktiviere den kompakten Modus für Logs
+  log:
+    preview: Dies ist eine Vorschau auf die Protokolle
+    warning: Ein Warnprotokoll sieht wie folgt aus
+    complex: Dies ist ein komplexer Protokolleintrag als json
+    simple: Dies ist eine sehr, sehr lange Nachricht, die standardmäßig umbrochen wird. Die Deaktivierung von Zeilenumbrüche würde dies unterbinden. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: Dies ist eine mehrzeilige Fehlermeldung
+      middle-line: mit einer zweiten Zeile
+      end-line: und schließlich einer dritten Zeile.
+releases:
+  features: Ein neues Feature | {count} Features
+  bugFixes: Ein Bug Fix | {count} Fixes
+  breaking: Ein Breaking Change | {count} Breaking Changes
+  three_parts: "{first}, {second} und {third}"
+  two_parts: "{first} und {second}"
+  latest: Letzte
+  no_releases: Du hast die aktuellste Version
+log_actions:
+  copy_log: Log kopieren
+  jump_to_context: Zum Kontext springen
+toasts:
+  copied:
+    title: Kopiert
+    message: Log in Zwischenablage kopiert
+analytics:
+  creating_table: Temporäre Tabelle wird erstellt...
+  downloading: Container-Logs werden abgerufen... ({size})
+  evaluating_query: Abfrage wird ausgewertet...
+  total_records: Insgesamt {count} Datensätze.
+  showing_first: Zeige die ersten {count}.

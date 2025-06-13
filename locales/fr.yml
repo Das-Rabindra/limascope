@@ -1,0 +1,134 @@
+toolbar:
+  clear: Effacer
+  download: Téléchargement
+  search: Chercher
+  show: Montrer seulement {std}
+  show-all: Afficher tous les flux
+  stop: Stop
+  start: Démarrer
+  restart: Redémarrer
+  show-hostname: Afficher le nom d'hôte
+  show-container-name: Afficher le nom du conteneur
+  shell: Shell
+  attach: Attacher
+action:
+  copy-log: Copier le journal
+  copy-link: Copier le permalien
+  see-in-context: Voir dans le contexte
+  show-details: Afficher les détails
+label:
+  containers: Conteneurs
+  container: Pas de conteneur | 1 conteneur | {count} conteneurs
+  service: Pas de service | 1 service | {count} services
+  services: Services
+  running-containers: Conteneurs en execution
+  all-containers: Tous les conteneurs
+  host: Hôte
+  hosts: Hôtes
+  password: Mot de passe
+  username: Nom d'utilisateur
+  container-name: Nom du conteneur
+  status: Status
+  created: Créé
+  avg-cpu: Moyenne CPU (%)
+  avg-mem: Moyenne MEM (%)
+  pinned: Epinglé
+  per-page: Colonnes par page
+  host-menu: Hôtes et Conteneurs
+  swarm-menu: Services et Stacks
+  group-menu: Groupes Personnalisés
+  no-logs: Le conteneur n'a pas encore de logs
+  show-all-containers: Afficher tous les conteneurs
+  collapse-all: Réduire tout
+tooltip:
+  search: Recherche de conteneurs (⌘ + k, ⌃k)
+  pin-column: Epinglé en colonne
+  merge-services: Fusionner tous les services dans une vue
+  merge-containers: Fusionner tous les conteneurs dans une vue
+  merge-hosts: Fusionner tous les conteneurs de cet hôte dans une vue
+error:
+  page-not-found: Cette page n'existe pas
+  invalid-auth: Nom d'utilisateur ou mot de passe non valides
+  logs-skipped: Afficher {total} entrées cachées
+  container-not-found: Conteneur non trouvé
+  events-stream:
+    title: Erreur inattendue
+    message: >-
+      L'interface utilisateur de Dozzle n'a pas pu se connecter à l'API. Veuillez vérifier les paramètres de votre réseau. Si vous utilisez un proxy inversé, assurez-vous qu'il est configuré correctement.
+  events-timeout:
+    title: Quelque chose ne va pas
+    message: >-
+      La connexion de l'interface utilisateur de Dozzle à l'API a mis trop de temps. Veuillez vérifier la connexion et réessayez.
+alert:
+  redirected:
+    title: Redirigé vers le nouveau conteneur
+    message: Dozzle vous a automatiquement redirigé vers le nouveau conteneur {containerId}.
+  similar-container-found:
+    title: Conteneur similaire trouvé
+    message: >-
+      Dozzle a trouvé un conteneur similaire {containerId} qui s'exécute sur le même hôte et basculera automatiquement vers lui à moins que vous ne cliquiez sur "Annuler".
+title:
+  page-not-found: Page non trouvée
+  login: Authentification requise
+  dashboard: 1 conteneur | {count} conteneurs
+  settings: Paramètres
+button:
+  logout: Déconnexion
+  login: Connexion
+  settings: Paramètres
+  cancel: Annuler
+  redirect: Rediriger
+placeholder:
+  search-containers: Recherche de conteneurs (⌘ + k, ⌃k)
+  search: Recherche
+settings:
+  help-support: >
+    Veuillez soutenir Dozzle en faisant un don ou en nous parrainant sur GitHub. Vos contributions nous aident à améliorer Dozzle pour tout le monde. Merci ! 🙏🏼
+  display: Afficher
+  locale: Langue de remplacement
+  small-scrollbars: Utiliser des barres de défilement plus petites
+  show-timesamps: Afficher les horodatages
+  soft-wrap: Lignes d'enroulement souples
+  datetime-format: Remplacer le format de la date et de l'heure
+  font-size: Taille de police à utiliser pour les journaux
+  color-scheme: Schéma de couleurs
+  options: Options
+  show-stopped-containers: Afficher les conteneurs arrêtés
+  about: A propos de
+  search: Activer la recherche avec Dozzle en utilisant
+  using-version: Vous utilisez <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  update-available: >-
+    Nouvelle version disponible! Mise à jour de <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
+  show-std: Afficher les étiquettes stdout et stderr
+  automatic-redirect: Redirection automatique vers de nouveaux conteneurs portant le même nom
+  compact: Activer le mode compact pour les journaux
+  log:
+    preview: Voici un aperçu des logs
+    warning: Un log d'avertissement ressemble à ceci
+    complex: Voici une entrée de journal complexe au format json
+    simple: Ceci est un très long message qui se plierait par défaut. La désactivation des retours à la ligne doux désactiverait cela. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    multi-line-error:
+      start-line: Ceci est un message d'erreur multiligne
+      middle-line: avec une deuxième ligne
+      end-line: et enfin une troisième ligne.
+releases:
+  features: une nouvelle fonctionnalité | {count} fonctionnalités
+  bugFixes: correction d'un bug | {count} bugs
+  breaking: un changement radical | {count} changements radicaux
+  three_parts: "{first}, {second} et {third}"
+  two_parts: "{first} avec {second}"
+  latest: Plus récent
+  no_releases: Vous avez la dernière version
+log_actions:
+  copy_log: Copier le journal
+  jump_to_context: Aller au contexte
+toasts:
+  copied:
+    title: Copié
+    message: Journal copié dans le presse-papiers
+analytics:
+  creating_table: Création d'une table temporaire...
+  downloading: Récupération des journaux des conteneurs... ({size})
+  evaluating_query: Évaluation de la requête...
+  total_records: Total de {count} enregistrements.
+  showing_first: Affichage des {count} premiers.

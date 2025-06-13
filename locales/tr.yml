@@ -1,0 +1,135 @@
+toolbar:
+  clear: Temizle
+  download: İndir
+  search: Ara
+  show: Sadece {std} göster
+  show-all: Tüm akışları göster
+  stop: Durdur
+  start: Başlat
+  restart: Yeniden Başlat
+  show-hostname: Sunucu adını göster
+  show-container-name: Konteyner adını göster
+  shell: Kabuk
+  attach: Bağla
+action:
+  copy-log: Günlüğü kopyala
+  copy-link: Kalıcı bağlantıyı kopyala
+  see-in-context: Bağlamda gör
+  show-details: Detayları göster
+label:
+  containers: Konteynerlar
+  container: Konteyner yok | 1 konteyner | {count} konteyner
+  service: Servis yok | 1 servis | {count} servis
+  services: Servisler
+  running-containers: Çalışan Konteynerlar
+  all-containers: Tüm Konteynerlar
+  total-containers: Toplam Konteyner
+  running: Çalışıyor
+  total-cpu-usage: Toplam CPU Kullanımı
+  total-mem-usage: Toplam Bellek Kullanımı
+  dozzle-version: Dozzle Sürümü
+  all: Tümü
+  host: Sunucu
+  hosts: Sunucular
+  password: Şifre
+  username: Kullanıcı Adı
+  container-name: Konteyner Adı
+  status: Durum
+  created: Oluşturulma
+  avg-cpu: Ort. CPU (%)
+  avg-mem: Ort. Bellek (%)
+  pinned: Sabitlenmiş
+  per-page: Sayfa başına satır
+  host-menu: Sunucular ve Konteynerler
+  swarm-menu: Servisler ve Yığınlar
+  group-menu: Özel Gruplar
+  no-logs: Konteyner henüz log içermiyor
+  show-all-containers: Tüm konteynerleri göster
+  collapse-all: Hepsini daralt
+tooltip:
+  search: Konteynerlerde ara (⌘ + k, ⌃k)
+  pin-column: Sütun olarak sabitle
+  merge-services: Tüm servisleri tek görünümde birleştir
+  merge-containers: Tüm konteynerleri tek görünümde birleştir
+  merge-hosts: Bu sunucudaki tüm konteynerleri tek görünümde birleştir
+error:
+  page-not-found: Bu sayfa bulunamadı
+  invalid-auth: Kullanıcı adı veya şifre geçersiz
+  logs-skipped: "{total} gizli girişi göster"
+  container-not-found: Konteyner bulunamadı
+  events-stream:
+    title: Beklenmeyen Hata
+    message: >-
+      Dozzle arayüzü API'ye bağlanamadı. Lütfen ağ ayarlarınızı kontrol edin.
+      Ters proxy kullanıyorsanız, doğru yapılandırıldığından emin olun.
+  events-timeout:
+    title: Bir şeyler ters gidiyor
+    message: >-
+      Dozzle arayüzü API'ye bağlanırken zaman aşımına uğradı. Lütfen ağ
+      bağlantısını kontrol edin ve tekrar deneyin.
+alert:
+  redirected:
+    title: Yeni konteynere yönlendirildi
+    message: Dozzle sizi otomatik olarak yeni {containerId} konteynerine yönlendirdi.
+  similar-container-found:
+    title: Benzer konteyner bulundu
+    message: >-
+      Dozzle, aynı sunucuda çalışan benzer bir {containerId} konteyneri buldu ve
+      'İptal'e tıklamadığınız sürece otomatik olarak ona geçecektir.
+title:
+  page-not-found: Sayfa bulunamadı
+  login: Kimlik Doğrulama Gerekli
+  dashboard: 1 konteyner | {count} konteyner
+  settings: Ayarlar
+button:
+  logout: Çıkış Yap
+  login: Giriş Yap
+  settings: Ayarlar
+  cancel: İptal
+  redirect: Yönlendir
+placeholder:
+  search-containers: Konteynerlerde ara (⌘ + k, ⌃k)
+  search: Ara
+settings:
+  help-support: >
+    Lütfen GitHub'da bağış yaparak veya bizi sponsor olarak destekleyerek Dozzle'ı destekleyin. Katkılarınız Dozzle'ı herkes için geliştirmemize yardımcı oluyor. Teşekkürler! 🙏🏼
+  display: Görünüm
+  locale: Dili geçersiz kıl
+  small-scrollbars: Daha küçük kaydırma çubukları kullan
+  show-timesamps: Zaman damgalarını göster
+  soft-wrap: Satırları yumuşak kaydır
+  datetime-format: Tarih ve saat biçimini geçersiz kıl
+  font-size: Günlükler için kullanılacak yazı tipi boyutu
+  color-scheme: Renk düzeni
+  options: Seçenekler
+  show-stopped-containers: Durdurulan konteynerleri göster
+  about: Hakkında
+  search: Dozzle kullanarak aramayı etkinleştir
+  using-version: <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version} kullanıyorsunuz.
+  update-available: >-
+    Yeni sürüm mevcut! <a href="{href}" target="_blank"
+    rel="noreferrer noopener">{nextVersion}</a> sürümüne güncelleyin.
+  show-std: stdout ve stderr etiketlerini göster
+  automatic-redirect: Aynı ada sahip yeni konteynerlere otomatik olarak yönlendir
+  compact: Günlükler için kompakt modu etkinleştir
+releases:
+  features: bir yeni özellik | {count} özellik
+  bugFixes: bir hata düzeltmesi | {count} düzeltme
+  breaking: bir kırılma değişikliği | {count} kırılma değişikliği
+  three_parts: "{first}, {second} ve {third}"
+  two_parts: "{first} ile {second}"
+  latest: En son
+  no_releases: En son sürüme sahipsiniz
+log_actions:
+  copy_log: Günlüğü kopyala
+  jump_to_context: Bağlama git
+toasts:
+  copied:
+    title: Kopyalandı
+    message: Günlük panoya kopyalandı
+analytics:
+  creating_table: Geçici tablo oluşturuluyor...
+  downloading: Konteyner günlükleri alınıyor... ({size})
+  evaluating_query: Sorgu değerlendiriliyor...
+  total_records: Toplam {count} kayıt.
+  showing_first: İlk {count} gösteriliyor.

@@ -1,0 +1,9 @@
+node_modules
+.cache
+.idea
+.github
+dist
+.git
+e2e
+docs
+internal/agent/pb/
