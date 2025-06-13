@@ -4,8 +4,8 @@ tmp_dir = "tmp"
 
 [build]
 args_bin = []
-bin = "./tmp/dozzle"
-cmd = "go build -race -o ./tmp/dozzle ."
+bin = "./tmp/dozzle.exe"
+cmd = "go build -o ./tmp/dozzle.exe ."
 delay = 1000
 exclude_dir = [
   "assets",
