@@ -105,7 +105,6 @@ export default defineConfig({
 
     footer: {
       message: "Released under the MIT License. Open sourced and sponsored by Docker OSS.",
-      copyright: "Copyright © 2019-present <a href='https://amirraminfar.me'>Amir Raminfar</a>",
     },
 
     socialLinks: [
