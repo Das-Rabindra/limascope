@@ -4,7 +4,7 @@ title: Container Names
 
 # Container Names
 
-By default, Dozzle retrieves container names directly from Docker. This is usually sufficient, as these names can be customized using the `--name` flag in `docker run` commands or through the `container_name` field in Docker Compose services.
+By default, Limascope retrieves container names directly from Docker. This is usually sufficient, as these names can be customized using the `--name` flag in `docker run` commands or through the `container_name` field in Docker Compose services.
 
 ## Custom Names
 

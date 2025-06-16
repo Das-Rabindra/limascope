@@ -1,6 +1,6 @@
 services:
   dozzle-service:
-    image: amir20/dozzle:local-test
+    image: Das-Rabindra/limascope:local-test
     environment:
       - DOZZLE_LEVEL=debug
       - DOZZLE_MODE=swarm

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/amir20/dozzle/types"
+	"github.com/Das-Rabindra/limascope/types"
 	"github.com/rs/zerolog/log"
 )
 

@@ -11,8 +11,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"github.com/docker/docker/api/types"
 	docker "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/events"
@@ -72,7 +72,7 @@ func NewClient(cli DockerCLI, host container.Host) *DockerClient {
 
 // NewLocalClient creates a new instance of Client with docker filters
 func NewLocalClient(hostname string) (*DockerClient, error) {
-	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation(), client.WithUserAgent("Docker-Client/Dozzle"))
+	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation(), client.WithUserAgent("Docker-Client/Limascope"))
 
 	if err != nil {
 		return nil, err
@@ -112,7 +112,7 @@ func NewRemoteClient(host container.Host) (*DockerClient, error) {
 		log.Debug().Msg("Not using TLS for remote client")
 	}
 
-	opts = append(opts, client.WithAPIVersionNegotiation(), client.WithUserAgent("Docker-Client/Dozzle"))
+	opts = append(opts, client.WithAPIVersionNegotiation(), client.WithUserAgent("Docker-Client/Limascope"))
 
 	cli, err := client.NewClientWithOpts(opts...)
 

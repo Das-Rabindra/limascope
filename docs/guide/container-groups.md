@@ -4,11 +4,11 @@ title: Container Groups
 
 # Container Groups
 
-Dozzle performs automatic grouping of containers based on their stack name or service name. You can also create custom groups using labels.
+Limascope performs automatic grouping of containers based on their stack name or service name. You can also create custom groups using labels.
 
 ## Default Groups
 
-By default, containers are grouped by their stack name in host mode. If `com.docker.swarm.service.name` label is present, Dozzle will automatically enable a "swarm mode" where all containers with the same service name will be joined together.
+By default, containers are grouped by their stack name in host mode. If `com.docker.swarm.service.name` label is present, Limascope will automatically enable a "swarm mode" where all containers with the same service name will be joined together.
 
 ## Custom Groups
 

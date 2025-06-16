@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 )
 
 func (h *handler) debugStore(w http.ResponseWriter, r *http.Request) {

@@ -4,17 +4,17 @@ import (
 	"context"
 	"embed"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/docker"
-	container_support "github.com/amir20/dozzle/internal/support/container"
-	docker_support "github.com/amir20/dozzle/internal/support/docker"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/docker"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
+	docker_support "github.com/Das-Rabindra/limascope/internal/support/docker"
 	"github.com/rs/zerolog/log"
 )
 
 func CreateMultiHostService(embeddedCerts embed.FS, args Args) *docker_support.MultiHostService {
 	var clients []container_support.ClientService
 	if len(args.RemoteHost) > 0 {
-		log.Info().Msg(`Consider using Dozzle's remote agent to manage remote hosts. See https://dozzle.dev/guide/agent for more information`)
+		log.Info().Msg(`Consider using Limascope's remote agent to manage remote hosts. See https://dozzle.dev/guide/agent for more information`)
 	}
 
 	for _, remoteHost := range args.RemoteHost {

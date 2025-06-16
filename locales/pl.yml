@@ -22,7 +22,7 @@ label:
   running: Uruchomione
   total-cpu-usage: Całkowite użycie CPU
   total-mem-usage: Całkowite użycie pamięci
-  dozzle-version: Wersja Dozzle
+  dozzle-version: Wersja Limascope
   containers: Kontenery
   container: Brak kontenerów | 1 kontener | {count} kontenerów
   running-containers: Działające kontenery
@@ -58,7 +58,7 @@ error:
   events-stream:
     title: Niespodziewany błąd
     message: >-
-      Dozzle nie był wstanie połączyć się z API. Sprawdź ustawienia sieciowe.
+      Limascope nie był wstanie połączyć się z API. Sprawdź ustawienia sieciowe.
       Jeżeli korzysasz z reverse proxy, upewnij się że jest poprawnie skonfigurowane.
   events-timeout:
     title: Coś jest nie tak
@@ -67,11 +67,11 @@ error:
 alert:
   redirected:
     title: Przekierowywanie do nowego kontenera
-    message: Dozzle automatycznie przekierował do nowego kontenera {containerId}.
+    message: Limascope automatycznie przekierował do nowego kontenera {containerId}.
   similar-container-found:
     title: Podobny kontener został znaleziony
     message: >-
-      Dozzle znalazł podobny kontener {containerId} który działa na tym samym
+      Limascope znalazł podobny kontener {containerId} który działa na tym samym
       hoście i przekieruje Cię na niego automatycznie jeżeli nie klikniesz 'Anuluj'
 title:
   page-not-found: Strona nie została znaleziona
@@ -89,7 +89,7 @@ placeholder:
   search: Szukaj
 settings:
   help-support: >
-    Prosimy o wsparcie Dozzle poprzez darowizny lub sponsoring na GitHub. Twoje wkłady pomagają nam ulepszać Dozzle dla wszystkich. Dziękujemy! 🙏🏼
+    Prosimy o wsparcie Limascope poprzez darowizny lub sponsoring na GitHub. Twoje wkłady pomagają nam ulepszać Limascope dla wszystkich. Dziękujemy! 🙏🏼
   display: Wyświetlanie
   locale: Nadpisz język
   small-scrollbars: Użyj mniejszych suwaków
@@ -102,7 +102,7 @@ settings:
   show-stopped-containers: Pokaż zatrzymane kontenery
   about: Informacje
   search: Włącz szukanie z dozzle
-  using-version: Używasz <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> w wersji {version}.
+  using-version: Używasz <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> w wersji {version}.
   update-available: >-
     Nowa wersja jest dostępna! Zaktualizuj do <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a>.

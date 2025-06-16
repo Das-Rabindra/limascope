@@ -5,32 +5,13 @@
         <h2>{{ $t("settings.about") }}</h2>
       </div>
 
-      <div class="flex flex-row gap-2">
-        <span v-html="$t('settings.using-version', { version: config.version })"></span>
-        <span
-          v-if="hasRelease"
-          v-html="$t('settings.update-available', { nextVersion: latestRelease?.name, href: latestRelease?.htmlUrl })"
-        ></span>
-      </div>
-
       <div class="mt-4">
         {{ $t("settings.help-support") }}
 
         <ul class="mt-6 flex gap-2">
           <li>
-            <a href="https://github.com/amir20/dozzle" target="_blank" rel="noopener noreferrer" class="btn">
-              <mdi:github /> amir20/dozzle
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://buymeacoffee.com/amirraminfar"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-            >
-              <mdi:beer />
-              Buy me a beer
+            <a href="https://github.com/Das-Rabindra/limascope" target="_blank" rel="noopener noreferrer" class="btn">
+              <mdi:github /> Das-Rabindra/limascope
             </a>
           </li>
         </ul>

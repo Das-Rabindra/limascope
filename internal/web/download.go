@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog/log"
 )

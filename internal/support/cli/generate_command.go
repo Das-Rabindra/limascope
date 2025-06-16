@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/amir20/dozzle/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/auth"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )

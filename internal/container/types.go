@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/amir20/dozzle/internal/agent/pb"
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/agent/pb"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

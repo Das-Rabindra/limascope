@@ -4,26 +4,26 @@ title: Getting Started
 
 # Getting Started
 
-Dozzle supports multiple ways to run the application. You can run it using Docker CLI, Docker Compose, Swarm, or Kubernetes. The following sections will guide you through the process of setting up Dozzle.
+Limascope supports multiple ways to run the application. You can run it using Docker CLI, Docker Compose, Swarm, or Kubernetes. The following sections will guide you through the process of setting up Limascope.
 
 > [!TIP]
-> If Docker Hub is blocked in your network, you can use the [GitHub Container Registry](https://ghcr.io/amir20/dozzle:latest) to pull the image. Use `ghcr.io/amir20/dozzle:latest` instead of `amir20/dozzle:latest`.
+> If Docker Hub is blocked in your network, you can use the [GitHub Container Registry](https://ghcr.io/Das-Rabindra/limascope:latest) to pull the image. Use `ghcr.io/Das-Rabindra/limascope:latest` instead of `Das-Rabindra/limascope:latest`.
 
 ## Standalone Docker
 
-The easiest way to set up Dozzle is to use the CLI and mount `docker.sock` file. This file is usually located at `/var/run/docker.sock` and can be mounted with the `--volume` flag. You also need to expose the port to view Dozzle. By default, Dozzle listens on port 8080, but you can change the external port using `-p`. You can also run using compose or as a service in Swarm.
+The easiest way to set up Limascope is to use the CLI and mount `docker.sock` file. This file is usually located at `/var/run/docker.sock` and can be mounted with the `--volume` flag. You also need to expose the port to view Limascope. By default, Limascope listens on port 8080, but you can change the external port using `-p`. You can also run using compose or as a service in Swarm.
 
 ::: code-group
 
 ```sh
-docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 amir20/dozzle:latest
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabindra/limascope:latest
 ```
 
 ```yaml [docker-compose.yml]
 # Run with docker compose up -d
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
@@ -42,18 +42,18 @@ services:
 :::
 
 > [!TIP]
-> Dozzle supports actions, such as stopping, starting, and restarting containers, or attaching to container shells. But they are disabled by default for security reasons. To enable them, uncomment the corresponding environment variables.
-> Dozzle also supports connecting to remote agents to monitor multiple Docker hosts. See [agent](/guide/agent) to learn more.
+> Limascope supports actions, such as stopping, starting, and restarting containers, or attaching to container shells. But they are disabled by default for security reasons. To enable them, uncomment the corresponding environment variables.
+> Limascope also supports connecting to remote agents to monitor multiple Docker hosts. See [agent](/guide/agent) to learn more.
 
 ## Docker Swarm
 
-Dozzle supports running in Swarm mode by deploying it on every node. To run Dozzle in Swarm mode, you can use the following configuration:
+Limascope supports running in Swarm mode by deploying it on every node. To run Limascope in Swarm mode, you can use the following configuration:
 
 ```yaml [dozzle-stack.yml]
 # Run with docker stack deploy -c dozzle-stack.yml <name>
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_MODE=swarm
     volumes:
@@ -79,7 +79,7 @@ See [swarm mode](/guide/swarm-mode) for more information.
 
 ## K8s <Badge type="tip" text="New" />
 
-Dozzle supports running in Kubernetes. It only needs to be deployed on one node within the cluster.
+Limascope supports running in Kubernetes. It only needs to be deployed on one node within the cluster.
 
 <details>
 <summary>Kubernetes Configuration</summary>
@@ -136,7 +136,7 @@ spec:
       serviceAccountName: pod-viewer
       containers:
         - name: dozzle
-          image: amir20/dozzle:latest
+          image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
           env:

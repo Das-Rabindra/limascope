@@ -5,7 +5,7 @@ layout: home
 title: Home
 
 hero:
-  name: "Dozzle"
+  name: "Limascope"
   tagline: Simple Container Monitoring and Logging
   actions:
     - theme: brand
@@ -13,14 +13,11 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/amir20/dozzle
-    - theme: alt
-      text: Support 🙏🏼
-      link: https://www.buymeacoffee.com/amirraminfar
+      link: https://github.com/Das-Rabindra/limascope
 
 features:
   - title: Self Hosted
-    details: Dozzle is a self-hosted application that runs in your own infrastructure, ensuring your logs remain private and secure.
+    details: Limascope is a self-hosted application that runs in your own infrastructure, ensuring your logs remain private and secure.
     icon: 🏠
   - title: Real-time Logging & Monitoring
     details: Captures real-time Docker container logs, enabling quick and efficient issue diagnosis.
@@ -51,8 +48,8 @@ features:
     icon: 🐳
     linkText: Learn More
   - title: Sponsored by Docker OSS
-    details: Dozzle is open source and free to use, with the source code available on GitHub.
+    details: Limascope is open source and free to use, with the source code available on GitHub.
     icon: 📜
-    link: https://hub.docker.com/r/amir20/dozzle
+    link: https://hub.docker.com/r/Das-Rabindra/limascope
     linkText: Docker Hub
 ---

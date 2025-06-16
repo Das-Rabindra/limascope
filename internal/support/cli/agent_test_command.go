@@ -5,7 +5,7 @@ import (
 	"embed"
 	"fmt"
 
-	"github.com/amir20/dozzle/internal/agent"
+	"github.com/Das-Rabindra/limascope/internal/agent"
 	"github.com/rs/zerolog/log"
 )
 

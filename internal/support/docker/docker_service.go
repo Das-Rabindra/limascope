@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/docker"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/docker"
 
 	"github.com/docker/docker/pkg/stdcopy"
 	"github.com/rs/zerolog/log"

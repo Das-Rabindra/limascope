@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        I get an overwhelming of issues which I don't have time to investigate. Most often, they are due to configuration issues. For this reason, I ask you to help me by providing as much information as possible. For issues with `docker-socket-proxy` I may not be able to help as those are not related to Dozzle.
+        I get an overwhelming of issues which I don't have time to investigate. Most often, they are due to configuration issues. For this reason, I ask you to help me by providing as much information as possible. For issues with `docker-socket-proxy` I may not be able to help as those are not related to Limascope.
   - type: checkboxes
     attributes:
       label: 🔍 Check for existing issues
@@ -16,7 +16,7 @@ body:
           required: true
   - type: dropdown
     attributes:
-      label: How is Dozzle deployed?
+      label: How is Limascope deployed?
       description: Select the components that you are using.
       options:
         - Standalone Deployment
@@ -28,14 +28,14 @@ body:
       required: true
   - type: input
     attributes:
-      label: 📦 Dozzle version
-      description: Run `docker run amir20/dozzle --version` or `curl http://<host>/api/version`.
+      label: 📦 Limascope version
+      description: Run `docker run Das-Rabindra/limascope --version` or `curl http://<host>/api/version`.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: ✅ Command used to run Dozzle
-      description: Please provide the command used to run Dozzle. Provide docker-compose.yml if applicable.
+      label: ✅ Command used to run Limascope
+      description: Please provide the command used to run Limascope. Provide docker-compose.yml if applicable.
     validations:
       required: true
   - type: textarea
@@ -53,7 +53,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 📜 Dozzle logs are required for debugging purposes. You may need to enable debug mode. See https://dozzle.dev/guide/debugging.
+      label: 📜 Limascope logs are required for debugging purposes. You may need to enable debug mode. See https://dozzle.dev/guide/debugging.
       description: Drag log files or paste the logs into the text input below
     validations:
       required: true

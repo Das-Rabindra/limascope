@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("has right title", async ({ page }) => {
-  await expect(page).toHaveTitle(/.* - Dozzle/);
+  await expect(page).toHaveTitle(/.* - Limascope/);
 });
 
 test("url should have custom base", async ({ page }) => {

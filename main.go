@@ -12,14 +12,14 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/amir20/dozzle/internal/agent"
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/docker"
-	"github.com/amir20/dozzle/internal/k8s"
-	"github.com/amir20/dozzle/internal/support/cli"
-	docker_support "github.com/amir20/dozzle/internal/support/docker"
-	k8s_support "github.com/amir20/dozzle/internal/support/k8s"
-	"github.com/amir20/dozzle/internal/web"
+	"github.com/Das-Rabindra/limascope/internal/agent"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/docker"
+	"github.com/Das-Rabindra/limascope/internal/k8s"
+	"github.com/Das-Rabindra/limascope/internal/support/cli"
+	docker_support "github.com/Das-Rabindra/limascope/internal/support/docker"
+	k8s_support "github.com/Das-Rabindra/limascope/internal/support/k8s"
+	"github.com/Das-Rabindra/limascope/internal/web"
 	"github.com/rs/zerolog/log"
 )
 
@@ -46,7 +46,7 @@ func main() {
 		log.Fatal().Str("provider", args.AuthProvider).Msg("Invalid auth provider")
 	}
 
-	log.Info().Msgf("Dozzle version %s", args.Version())
+	log.Info().Msgf("Limascope version %s", args.Version())
 
 	var hostService web.HostService
 	switch args.Mode {
@@ -82,7 +82,7 @@ func main() {
 
 		go cli.StartEvent(args, "swarm", localClient, "")
 		go func() {
-			log.Info().Msgf("Dozzle agent version in swarm mode %s", args.Version())
+			log.Info().Msgf("Limascope agent version in swarm mode %s", args.Version())
 			if err := server.Serve(listener); err != nil {
 				log.Error().Err(err).Msg("failed to serve")
 			}

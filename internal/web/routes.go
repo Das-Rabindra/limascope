@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/container"
-	container_support "github.com/amir20/dozzle/internal/support/container"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"

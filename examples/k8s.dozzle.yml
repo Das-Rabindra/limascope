@@ -49,7 +49,7 @@ spec:
       serviceAccountName: pod-viewer
       containers:
         - name: dozzle
-          image: amir20/dozzle:latest
+          image: Das-Rabindra/limascope:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8080

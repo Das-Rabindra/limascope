@@ -1,9 +1,9 @@
 package cli
 
 import (
-	"github.com/amir20/dozzle/internal/analytics"
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/types"
+	"github.com/Das-Rabindra/limascope/internal/analytics"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/types"
 	"github.com/rs/zerolog/log"
 )
 

@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/go-chi/jwtauth/v5"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/crypto/bcrypt"
@@ -169,7 +169,7 @@ func sha256sum(s string) string {
 
 func CompareHashAndPassword(hash, password string) bool {
 	if len(hash) == 64 {
-		log.Warn().Msg("Using sha256sum for password comparison. Consider using a more secure hash algorithm to protected against brute-force attacks. See https://github.com/amir20/dozzle/security/advisories/GHSA-w7qr-q9fh-fj35 for more details.")
+		log.Warn().Msg("Using sha256sum for password comparison. Consider using a more secure hash algorithm to protected against brute-force attacks. See https://github.com/Das-Rabindra/limascope/security/advisories/GHSA-w7qr-q9fh-fj35 for more details.")
 		return hash == sha256sum(password)
 	}
 

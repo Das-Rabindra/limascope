@@ -31,13 +31,13 @@ Configurations can be done with flags or environment variables. The table below 
 
 ## Generate users.yml
 
-Dozzle supports generating `users.yml` file. This file is used to authenticate users. Here is an example:
+Limascope supports generating `users.yml` file. This file is used to authenticate users. Here is an example:
 
 ```sh
-docker run -it --rm amir20/dozzle generate admin --password password --email test@email.net --name "John Doe" > users.yml
+docker run -it --rm Das-Rabindra/limascope generate admin --password password --email test@email.net --name "John Doe" > users.yml
 ```
 
-In this example, `admin` is the username. Email and name are optional but recommended to display accurate avatars. `docker run amir20/dozzle generate --help` displays all options.
+In this example, `admin` is the username. Email and name are optional but recommended to display accurate avatars. `docker run Das-Rabindra/limascope generate --help` displays all options.
 
 | Flag         | Description      | Default |
 | ------------ | ---------------- | ------- |
@@ -49,10 +49,10 @@ See [authentication](/guide/authentication) for more information.
 
 ## Agent Mode
 
-Dozzle supports running in agent mode. Agent mode is useful when running Dozzle on a remote host and you want to monitor a different Docker host. Agent mode is enabled by setting the `--remote-agent` flag. Here is an example:
+Limascope supports running in agent mode. Agent mode is useful when running Limascope on a remote host and you want to monitor a different Docker host. Agent mode is enabled by setting the `--remote-agent` flag. Here is an example:
 
 ```sh
-docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 amir20/dozzle --remote-agent remote-ip:7007
+docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabindra/limascope --remote-agent remote-ip:7007
 ```
 
 | Flag     | Env Variable        | Default |
@@ -63,6 +63,6 @@ See [agent](/guide/agent) for more information.
 
 ## Healthcheck
 
-Dozzle supports healthcheck using `dozzle healthcheck` command. It is not enabled by default as it adds extra CPU usage. To use `healthcheck`, you need to configure it.
+Limascope supports healthcheck using `dozzle healthcheck` command. It is not enabled by default as it adds extra CPU usage. To use `healthcheck`, you need to configure it.
 
 See [healthcheck](/guide/healthcheck) for more information.

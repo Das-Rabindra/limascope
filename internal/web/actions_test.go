@@ -7,7 +7,7 @@ import (
 
 	"testing"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

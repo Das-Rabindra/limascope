@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/k8s"
-	container_support "github.com/amir20/dozzle/internal/support/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/k8s"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

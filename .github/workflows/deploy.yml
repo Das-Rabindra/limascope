@@ -109,8 +109,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            amir20/dozzle
-            ghcr.io/amir20/dozzle
+            Das-Rabindra/limascope
+            ghcr.io/Das-Rabindra/limascope
           tags: |
             type=raw,value=latest
             type=semver,pattern={{version}},prefix=v

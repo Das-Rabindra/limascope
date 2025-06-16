@@ -7,8 +7,8 @@ import (
 
 	"time"
 
-	"github.com/amir20/dozzle/internal/agent"
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/agent"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/docker/docker/pkg/stdcopy"
 	"github.com/rs/zerolog/log"
 )

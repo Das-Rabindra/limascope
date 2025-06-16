@@ -54,20 +54,20 @@ error:
   events-stream:
     title: 意外錯誤
     message: >-
-      Dozzle UI 無法連線至 API。請檢查您的網路設定。
+      Limascope UI 無法連線至 API。請檢查您的網路設定。
       如果您使用反向代理伺服器，請確認其設定正確。
   events-timeout:
     title: 發生錯誤
     message: >-
-      Dozzle UI 連線至 API 時逾時。請檢查網路連線後再試一次。
+      Limascope UI 連線至 API 時逾時。請檢查網路連線後再試一次。
 alert:
   redirected:
     title: 已重新導向至新容器
-    message: Dozzle 已自動將您重新導向至新容器 {containerId}。
+    message: Limascope 已自動將您重新導向至新容器 {containerId}。
   similar-container-found:
     title: 找到相似的容器
     message: >-
-      Dozzle 在相同主機上找到一個相似的容器 {containerId}，
+      Limascope 在相同主機上找到一個相似的容器 {containerId}，
       除非您點選「取消」，否則系統將自動切換至該容器。
 title:
   page-not-found: 找不到頁面
@@ -85,7 +85,7 @@ placeholder:
   search: 搜尋
 settings:
   help-support: >
-    請透過在 GitHub 上捐款或贊助我們來支持 Dozzle。您的貢獻幫助我們為所有人改進 Dozzle。謝謝！ 🙏🏼
+    請透過在 GitHub 上捐款或贊助我們來支持 Limascope。您的貢獻幫助我們為所有人改進 Limascope。謝謝！ 🙏🏼
   display: 顯示
   locale: 變更語言
   small-scrollbars: 使用較小的捲軸
@@ -97,8 +97,8 @@ settings:
   options: 選項
   show-stopped-containers: 顯示已停止的容器
   about: 關於
-  search: 啟用 Dozzle 搜尋功能
-  using-version: 您目前使用的是 <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}。
+  search: 啟用 Limascope 搜尋功能
+  using-version: 您目前使用的是 <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}。
   update-available: >-
     有新版本可用！請更新至 <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a>。

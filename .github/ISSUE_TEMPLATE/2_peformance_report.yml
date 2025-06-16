@@ -12,7 +12,7 @@ body:
           required: true
   - type: dropdown
     attributes:
-      label: How is Dozzle deployed?
+      label: How is Limascope deployed?
       description: Select the components that you are using.
       options:
         - Standalone Deployment
@@ -23,14 +23,14 @@ body:
       required: true
   - type: input
     attributes:
-      label: Dozzle version
+      label: Limascope version
       description: Can be found in logs or settings page.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: ✅ Command used to run Dozzle
-      description: Please provide the command used to run Dozzle. Provide docker-compose.yml if applicable.
+      label: ✅ Command used to run Limascope
+      description: Please provide the command used to run Limascope. Provide docker-compose.yml if applicable.
     validations:
       required: true
   - type: textarea

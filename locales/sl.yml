@@ -52,21 +52,21 @@ error:
   logs-skipped: Prikaži {total} skritih vnosov
   events-stream:
     title: Nepričakovana napaka
-    message: Uporabniški vmesnik Dozzle se ni mogel povezati z API-jem. 
+    message: Uporabniški vmesnik Limascope se ni mogel povezati z API-jem. 
       Preverite omrežne nastavitve. Če uporabljate obratni proxy, se 
       prepričajte, da je pravilno konfiguriran.
   events-timeout:
     title: Nekaj ni v redu
-    message: Časovna omejitev uporabniškega vmesnika Dozzle je potekla med 
+    message: Časovna omejitev uporabniškega vmesnika Limascope je potekla med 
       povezovanjem z API-jem. Preverite omrežno povezavo in poskusite znova.
   container-not-found: Zabojnika ni bilo mogoče najti
 alert:
   redirected:
     title: Preusmerjeno v nov zabojnik
-    message: Dozzle vas je samodejno preusmeril v nov zabojnik {containerId}.
+    message: Limascope vas je samodejno preusmeril v nov zabojnik {containerId}.
   similar-container-found:
     title: Najden podoben zabojnik
-    message: Dozzle je našel podoben zabojnik {containerId}, ki se izvaja na 
+    message: Limascope je našel podoben zabojnik {containerId}, ki se izvaja na 
       istem gostitelju in bo samodejno preklopil nanj, razen če kliknete 
       »Prekliči«.
 title:
@@ -95,7 +95,7 @@ settings:
   options: Možnosti
   show-stopped-containers: Prikaži ustavljene zabojnike
   about: O programu
-  search: Omogočite iskanje z Dozzle z uporabo
+  search: Omogočite iskanje z Limascope z uporabo
   update-available: Nova različica je na voljo! Posodobi na <a href="{href}" 
     target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Prikaži oznake stdout in stderr
@@ -113,9 +113,9 @@ settings:
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       dolore magna aliqua.
   using-version: Uporabljaš <a href="https://dozzle.dev/" target="_blank" 
-    rel="noreferrer noopener">Dozzle</a> {version}.
-  help-support: "Prosimo, podprite Dozzle z donacijo ali sponzoriranjem na GitHubu.
-    Vaši prispevki nam pomagajo izboljšati Dozzle za vse. Hvala! 🙏🏼\n"
+    rel="noreferrer noopener">Limascope</a> {version}.
+  help-support: "Prosimo, podprite Limascope z donacijo ali sponzoriranjem na GitHubu.
+    Vaši prispevki nam pomagajo izboljšati Limascope za vse. Hvala! 🙏🏼\n"
   automatic-redirect: Samodejna preusmeritev na nove zabojnike z istim imenom
 releases:
   features: ena nova funkcija | {count} funkcij

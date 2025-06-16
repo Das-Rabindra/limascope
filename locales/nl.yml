@@ -54,7 +54,7 @@ error:
   events-stream:
     title: Onverwachte fout
     message: >-
-      De Dozzle-interface kon geen verbinding maken met de API. Controleer je netwerkinstellingen.
+      De Limascope-interface kon geen verbinding maken met de API. Controleer je netwerkinstellingen.
       Gebruik je een reverse proxy? Zorg er dan voor dat deze correct is geconfigureerd.
   events-timeout:
     title: Er gaat iets mis
@@ -63,11 +63,11 @@ error:
 alert:
   redirected:
     title: Doorgestuurd naar nieuwe container
-    message: Dozzle heeft je automatisch doorgestuurd naar de nieuwe container {containerId}.
+    message: Limascope heeft je automatisch doorgestuurd naar de nieuwe container {containerId}.
   similar-container-found:
     title: Vergelijkbare container gevonden
     message: >-
-      Dozzle heeft een vergelijkbare container gevonden ({containerId}) op dezelfde host. Je wordt hier automatisch naartoe omgeleid, tenzij je op 'Annuleren' klikt.
+      Limascope heeft een vergelijkbare container gevonden ({containerId}) op dezelfde host. Je wordt hier automatisch naartoe omgeleid, tenzij je op 'Annuleren' klikt.
 title:
   page-not-found: Pagina niet gevonden
   login: Aanmelding vereist
@@ -84,7 +84,7 @@ placeholder:
   search: Zoeken
 settings:
   help-support: >
-    Steun Dozzle door te doneren of door ons te sponsoren op GitHub. Jouw bijdrage helpt ons om Dozzle verder te verbeteren voor iedereen. Hartelijk dank! 🙏🏼
+    Steun Limascope door te doneren of door ons te sponsoren op GitHub. Jouw bijdrage helpt ons om Limascope verder te verbeteren voor iedereen. Hartelijk dank! 🙏🏼
   display: Weergave
   locale: Taal aanpassen
   small-scrollbars: Kleinere scrollbalk gebruiken
@@ -96,8 +96,8 @@ settings:
   options: Opties
   show-stopped-containers: Gestopte containers tonen
   about: Over
-  search: Doorzoeken inschakelen via Dozzle
-  using-version: Je gebruikt <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Doorzoeken inschakelen via Limascope
+  using-version: Je gebruikt <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Er is een nieuwe versie beschikbaar! Update naar <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Toon stdout- en stderr-labels

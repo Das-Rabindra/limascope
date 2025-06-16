@@ -54,19 +54,19 @@ error:
   events-stream:
     title: Uventet fejl
     message: >-
-      Dozzle UI kunne ikke forbinde til API. Tjek venligst dine netværks indstillinger. Hvis du bruger en reverse proxy, vær sikker på at den er konfigureret korrekt.
+      Limascope UI kunne ikke forbinde til API. Tjek venligst dine netværks indstillinger. Hvis du bruger en reverse proxy, vær sikker på at den er konfigureret korrekt.
   events-timeout:
     title: Der er noget galt
     message: >-
-      Dozzle UI timed ud inden der blev forbundet til API. Tjek venligst din internet forbindelse og prøv igen.
+      Limascope UI timed ud inden der blev forbundet til API. Tjek venligst din internet forbindelse og prøv igen.
 alert:
   redirected:
     title: Omdirigeret til ny container
-    message: Dozzle omdirigerede dig automatisk til en ny container {containerId}.
+    message: Limascope omdirigerede dig automatisk til en ny container {containerId}.
   similar-container-found:
     title: Lignende container fundet
     message: >-
-      Dozzle fandt en lignende container {containerId} som kører på den samme host og vil automatisk skifte til den, med mindre du trykker 'Cancel'.
+      Limascope fandt en lignende container {containerId} som kører på den samme host og vil automatisk skifte til den, med mindre du trykker 'Cancel'.
 title:
   page-not-found: Side ikke fundet
   login: Godkendelse Krævet
@@ -83,7 +83,7 @@ placeholder:
   search: Søg
 settings:
   help-support: >
-    Støt venligst Dozzle ved at donere eller sponsorere os på GitHub. Dine bidrag hjælper os med at forbedre Dozzle for alle. Tak! 🙏🏼
+    Støt venligst Limascope ved at donere eller sponsorere os på GitHub. Dine bidrag hjælper os med at forbedre Limascope for alle. Tak! 🙏🏼
   display: Visning
   locale: Overskriv sprog
   small-scrollbars: Brug mindre scrollbarer
@@ -95,8 +95,8 @@ settings:
   options: Muligheder
   show-stopped-containers: Vis stoppet containere
   about: Omkring
-  search: Aktiver søgning med Dozzle ved brug af
-  using-version: Du bruger <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Aktiver søgning med Limascope ved brug af
+  using-version: Du bruger <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Ny version er tilgængelig! Opdater til <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Vis stdout og stderr mærker

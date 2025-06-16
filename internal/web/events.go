@@ -3,12 +3,12 @@ package web
 import (
 	"net/http"
 
-	"github.com/amir20/dozzle/internal/analytics"
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/container"
-	docker_support "github.com/amir20/dozzle/internal/support/docker"
-	support_web "github.com/amir20/dozzle/internal/support/web"
-	"github.com/amir20/dozzle/types"
+	"github.com/Das-Rabindra/limascope/internal/analytics"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	docker_support "github.com/Das-Rabindra/limascope/internal/support/docker"
+	support_web "github.com/Das-Rabindra/limascope/internal/support/web"
+	"github.com/Das-Rabindra/limascope/types"
 	"github.com/rs/zerolog/log"
 )
 

@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("has right title", async ({ page }) => {
-  await expect(page).toHaveTitle(/.* - Dozzle/);
+  await expect(page).toHaveTitle(/.* - Limascope/);
 });
 
 test("select running container", async ({ page }) => {

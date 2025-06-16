@@ -18,11 +18,11 @@ import (
 
 	"time"
 
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/container"
-	container_support "github.com/amir20/dozzle/internal/support/container"
-	support_web "github.com/amir20/dozzle/internal/support/web"
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
+	support_web "github.com/Das-Rabindra/limascope/internal/support/web"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"github.com/dustin/go-humanize"
 	"github.com/go-chi/chi/v5"
 

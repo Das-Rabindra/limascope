@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

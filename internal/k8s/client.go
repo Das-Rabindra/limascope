@@ -11,8 +11,8 @@ import (
 
 	"os"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/watch"

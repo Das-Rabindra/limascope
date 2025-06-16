@@ -1,6 +1,6 @@
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     environment:
       - DOZZLE_LEVEL=debug

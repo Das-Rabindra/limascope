@@ -26,11 +26,11 @@ test: fake_assets generate
 
 .PHONY: build
 build: dist generate
-	CGO_ENABLED=0 go build -ldflags "-s -w -X github.com/amir20/dozzle/internal/support/cli.Version=local"
+	CGO_ENABLED=0 go build -ldflags "-s -w -X github.com/Das-Rabindra/limascope/internal/support/cli.Version=local"
 
 .PHONY: docker
 docker: shared_key.pem shared_cert.pem
-	@docker build  --build-arg TAG=local -t amir20/dozzle .
+	@docker build  --build-arg TAG=local -t Das-Rabindra/limascope .
 
 generate: shared_key.pem shared_cert.pem $(GEN_FILES)
 
@@ -46,7 +46,7 @@ shared_key.pem:
 	@openssl genpkey -algorithm Ed25519 -out shared_key.pem
 
 shared_cert.pem: shared_key.pem
-	@openssl req -new -key shared_key.pem -out shared_request.csr -subj "/C=US/ST=California/L=San Francisco/O=Dozzle"
+	@openssl req -new -key shared_key.pem -out shared_request.csr -subj "/C=US/ST=California/L=San Francisco/O=Limascope"
 	@openssl x509 -req -in shared_request.csr -signkey shared_key.pem -out shared_cert.pem -days 365
 	@rm shared_request.csr
 
@@ -55,8 +55,8 @@ $(GEN_DIR)/%.pb.go: $(PROTO_DIR)/%.proto
 
 .PHONY: push
 push: docker
-	@docker tag amir20/dozzle:latest amir20/dozzle:local-test
-	@docker push amir20/dozzle:local-test
+	@docker tag Das-Rabindra/limascope:latest Das-Rabindra/limascope:local-test
+	@docker push Das-Rabindra/limascope:local-test
 
 tools:
 	go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
@@ -64,7 +64,7 @@ tools:
 	go install github.com/air-verse/air@latest
 
 run: docker
-	docker run -it --rm -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock amir20/dozzle:latest
+	docker run -it --rm -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock Das-Rabindra/limascope:latest
 
 preview: build
 	pnpm preview

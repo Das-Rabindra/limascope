@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/puzpuzpuz/xsync/v4"
 	"github.com/rs/zerolog/log"
 )

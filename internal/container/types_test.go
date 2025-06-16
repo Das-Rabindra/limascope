@@ -3,7 +3,7 @@ package container
 import (
 	"testing"
 
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"github.com/go-faker/faker/v4"
 	"github.com/go-faker/faker/v4/pkg/options"
 	"github.com/stretchr/testify/assert"

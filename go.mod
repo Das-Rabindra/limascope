@@ -1,4 +1,4 @@
-module github.com/amir20/dozzle
+module github.com/Das-Rabindra/limascope
 
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect

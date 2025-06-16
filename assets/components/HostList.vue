@@ -17,7 +17,7 @@
               class="badge badge-success badge-xs gap-2 p-2"
               :class="{ 'badge-warning': config.version != host.agentVersion }"
               v-else-if="host.type == 'agent'"
-              title="Dozzle Agent"
+              title="Limascope Agent"
             >
               {{ host.agentVersion }}
             </span>

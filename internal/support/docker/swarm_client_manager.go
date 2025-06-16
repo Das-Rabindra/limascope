@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/amir20/dozzle/internal/agent"
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/docker"
-	container_support "github.com/amir20/dozzle/internal/support/container"
+	"github.com/Das-Rabindra/limascope/internal/agent"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/docker"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
 
 	"github.com/puzpuzpuz/xsync/v4"
 	"github.com/samber/lo"

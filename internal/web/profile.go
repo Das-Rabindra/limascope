@@ -4,8 +4,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/amir20/dozzle/internal/auth"
-	"github.com/amir20/dozzle/internal/profile"
+	"github.com/Das-Rabindra/limascope/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/profile"
 	"github.com/rs/zerolog/log"
 )
 

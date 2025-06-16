@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
-	container_support "github.com/amir20/dozzle/internal/support/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	container_support "github.com/Das-Rabindra/limascope/internal/support/container"
 	"github.com/rs/zerolog/log"
 )
 

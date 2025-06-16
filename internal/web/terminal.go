@@ -3,7 +3,7 @@ package web
 import (
 	"net/http"
 
-	"github.com/amir20/dozzle/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/auth"
 	"github.com/go-chi/chi/v5"
 	"github.com/gorilla/websocket"
 	"github.com/rs/zerolog/log"

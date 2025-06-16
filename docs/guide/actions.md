@@ -4,18 +4,18 @@ title: Container Actions
 
 # Using Container Actions
 
-Dozzle supports container actions, which allows you to `start`, `stop` and `restart` containers from the dropdown menu on the right next to the container stats. This feature is **disabled** by default and can be enabled by setting the environment variable `DOZZLE_ENABLE_ACTIONS` to `true`.
+Limascope supports container actions, which allows you to `start`, `stop` and `restart` containers from the dropdown menu on the right next to the container stats. This feature is **disabled** by default and can be enabled by setting the environment variable `DOZZLE_ENABLE_ACTIONS` to `true`.
 
 ::: code-group
 
 ```sh
-docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 amir20/dozzle --enable-actions
+docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabindra/limascope --enable-actions
 ```
 
 ```yaml [docker-compose.yml]
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:

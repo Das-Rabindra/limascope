@@ -10,7 +10,7 @@ import (
 
 	"testing"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	docker "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/system"
 	"github.com/stretchr/testify/assert"

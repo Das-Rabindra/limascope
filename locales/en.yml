@@ -54,22 +54,22 @@ error:
   events-stream:
     title: Unexpected Error
     message: >-
-      Dozzle UI wasn't able to connect to API. Please check your network settings.
+      Limascope UI wasn't able to connect to API. Please check your network settings.
       If you are using a reverse proxy, please make sure it is configured
       properly.
   events-timeout:
     title: Something is not right
     message: >-
-      Dozzle UI timed out while connecting to API. Please check network
+      Limascope UI timed out while connecting to API. Please check network
       connection and try again.
 alert:
   redirected:
     title: Redirected to new container
-    message: Dozzle automatically redirected you to new container {containerId}.
+    message: Limascope automatically redirected you to new container {containerId}.
   similar-container-found:
     title: Similar container found
     message: >-
-      Dozzle found a similar container {containerId} that is running on the same
+      Limascope found a similar container {containerId} that is running on the same
       host and will automatically switch to it unless you click 'Cancel'.
 title:
   page-not-found: Page not found
@@ -87,7 +87,7 @@ placeholder:
   search: Search
 settings:
   help-support: >
-    Please support Dozzle by donating or sponsoring us on GitHub. Your contributions help us improve Dozzle for
+    Please support Limascope by donating or sponsoring us on GitHub. Your contributions help us improve Limascope for
     everyone. Thank you! 🙏🏼
   display: Display
   locale: Override language
@@ -100,8 +100,8 @@ settings:
   options: Options
   show-stopped-containers: Show stopped containers
   about: About
-  search: Enable searching with Dozzle using
-  using-version: You are using <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Enable searching with Limascope using
+#  using-version: You are using <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     New version is available! Update to <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a>.

@@ -54,7 +54,7 @@ ARG TARGETOS TARGETARCH
 RUN go generate
 
 # Build binary
-RUN GOOS=$TARGETOS GOARCH=$TARGETARCH CGO_ENABLED=0 go build -ldflags "-s -w -X github.com/amir20/dozzle/internal/support/cli.Version=$TAG" -o dozzle
+RUN GOOS=$TARGETOS GOARCH=$TARGETARCH CGO_ENABLED=0 go build -ldflags "-s -w -X github.com/Das-Rabindra/limascope/internal/support/cli.Version=$TAG" -o limascope
 
 RUN mkdir /data
 

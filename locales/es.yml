@@ -54,19 +54,19 @@ error:
   events-stream:
     title: Error inesperado
     message: >-
-      Dozzle UI no pudo conectar con la API. Por favor, compruebe la configuración de su red. Si está utilizando un proxy inverso, por favor, asegúrese de que está configurado correctamente.
+      Limascope UI no pudo conectar con la API. Por favor, compruebe la configuración de su red. Si está utilizando un proxy inverso, por favor, asegúrese de que está configurado correctamente.
   events-timeout:
     title: Algo no está bien
     message: >-
-      Dozzle UI se agotó el tiempo de espera al conectarse a la API. Por favor, compruebe la conexión de red y vuelva a intentarlo.
+      Limascope UI se agotó el tiempo de espera al conectarse a la API. Por favor, compruebe la conexión de red y vuelva a intentarlo.
 alert:
   redirected:
     title: Redirigido a nuevo contenedor
-    message: Dozzle le redirigió automáticamente al nuevo contenedor {containerId}.
+    message: Limascope le redirigió automáticamente al nuevo contenedor {containerId}.
   similar-container-found:
     title: Contenedor similar encontrado
     message: >-
-      Dozzle encontró un contenedor similar {containerId} que se está ejecutando en el mismo host. ¿Quieres cambiar a él?
+      Limascope encontró un contenedor similar {containerId} que se está ejecutando en el mismo host. ¿Quieres cambiar a él?
 title:
   page-not-found: Página no encontrada
   login: Autenticación requerida
@@ -83,7 +83,7 @@ placeholder:
   search: Buscar
 settings:
   help-support: >
-    Por favor, apoya a Dozzle donando o patrocinándonos en GitHub. Tus contribuciones nos ayudan a mejorar Dozzle para todos. ¡Gracias! 🙏🏼
+    Por favor, apoya a Limascope donando o patrocinándonos en GitHub. Tus contribuciones nos ayudan a mejorar Limascope para todos. ¡Gracias! 🙏🏼
   display: Vista
   locale: Sobrescribir idioma
   small-scrollbars: Utilizar barras de desplazamiento más pequeñas
@@ -95,8 +95,8 @@ settings:
   options: Opciones
   show-stopped-containers: Mostrar contenedores parados
   about: Acerca de
-  search: Activar la búsqueda con Dozzle mediante
-  using-version: Estás usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Activar la búsqueda con Limascope mediante
+  using-version: Estás usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     ¡La nueva versión está disponible! Actualizar a la <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Mostrar etiquetas de salida estándar y salida de error estándar

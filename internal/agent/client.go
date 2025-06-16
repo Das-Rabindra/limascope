@@ -12,8 +12,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/amir20/dozzle/internal/agent/pb"
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/agent/pb"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/rs/zerolog/log"
 	orderedmap "github.com/wk8/go-ordered-map/v2"
 	"google.golang.org/grpc"

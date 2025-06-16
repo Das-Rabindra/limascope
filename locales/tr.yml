@@ -27,7 +27,7 @@ label:
   running: Çalışıyor
   total-cpu-usage: Toplam CPU Kullanımı
   total-mem-usage: Toplam Bellek Kullanımı
-  dozzle-version: Dozzle Sürümü
+  dozzle-version: Limascope Sürümü
   all: Tümü
   host: Sunucu
   hosts: Sunucular
@@ -60,21 +60,21 @@ error:
   events-stream:
     title: Beklenmeyen Hata
     message: >-
-      Dozzle arayüzü API'ye bağlanamadı. Lütfen ağ ayarlarınızı kontrol edin.
+      Limascope arayüzü API'ye bağlanamadı. Lütfen ağ ayarlarınızı kontrol edin.
       Ters proxy kullanıyorsanız, doğru yapılandırıldığından emin olun.
   events-timeout:
     title: Bir şeyler ters gidiyor
     message: >-
-      Dozzle arayüzü API'ye bağlanırken zaman aşımına uğradı. Lütfen ağ
+      Limascope arayüzü API'ye bağlanırken zaman aşımına uğradı. Lütfen ağ
       bağlantısını kontrol edin ve tekrar deneyin.
 alert:
   redirected:
     title: Yeni konteynere yönlendirildi
-    message: Dozzle sizi otomatik olarak yeni {containerId} konteynerine yönlendirdi.
+    message: Limascope sizi otomatik olarak yeni {containerId} konteynerine yönlendirdi.
   similar-container-found:
     title: Benzer konteyner bulundu
     message: >-
-      Dozzle, aynı sunucuda çalışan benzer bir {containerId} konteyneri buldu ve
+      Limascope, aynı sunucuda çalışan benzer bir {containerId} konteyneri buldu ve
       'İptal'e tıklamadığınız sürece otomatik olarak ona geçecektir.
 title:
   page-not-found: Sayfa bulunamadı
@@ -92,7 +92,7 @@ placeholder:
   search: Ara
 settings:
   help-support: >
-    Lütfen GitHub'da bağış yaparak veya bizi sponsor olarak destekleyerek Dozzle'ı destekleyin. Katkılarınız Dozzle'ı herkes için geliştirmemize yardımcı oluyor. Teşekkürler! 🙏🏼
+    Lütfen GitHub'da bağış yaparak veya bizi sponsor olarak destekleyerek Limascope'ı destekleyin. Katkılarınız Limascope'ı herkes için geliştirmemize yardımcı oluyor. Teşekkürler! 🙏🏼
   display: Görünüm
   locale: Dili geçersiz kıl
   small-scrollbars: Daha küçük kaydırma çubukları kullan
@@ -104,8 +104,8 @@ settings:
   options: Seçenekler
   show-stopped-containers: Durdurulan konteynerleri göster
   about: Hakkında
-  search: Dozzle kullanarak aramayı etkinleştir
-  using-version: <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version} kullanıyorsunuz.
+  search: Limascope kullanarak aramayı etkinleştir
+  using-version: <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version} kullanıyorsunuz.
   update-available: >-
     Yeni sürüm mevcut! <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a> sürümüne güncelleyin.

@@ -9,8 +9,8 @@ import (
 
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
-	"github.com/amir20/dozzle/internal/k8s"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/k8s"
 )
 
 type K8sClientService struct {

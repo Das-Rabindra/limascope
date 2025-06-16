@@ -34,7 +34,7 @@ type Release struct {
 }
 
 func Fetch(currentVersion string) ([]Release, error) {
-	response, err := http.Get("https://api.github.com/repos/amir20/dozzle/releases?per_page=9")
+	response, err := http.Get("https://api.github.com/repos/Das-Rabindra/limascope/releases?per_page=9")
 	if err != nil {
 		return nil, err
 	}

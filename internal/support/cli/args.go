@@ -13,8 +13,8 @@ var Version = "head"
 type Args struct {
 	Addr             string              `arg:"env:DOZZLE_ADDR" default:":8080" help:"sets host:port to bind for server. This is rarely needed inside a docker container."`
 	Base             string              `arg:"env:DOZZLE_BASE" default:"/" help:"sets the base for http router."`
-	Hostname         string              `arg:"env:DOZZLE_HOSTNAME" help:"sets the hostname for display. This is useful with multiple Dozzle instances."`
-	Level            string              `arg:"env:DOZZLE_LEVEL" default:"info" help:"set Dozzle log level. Use debug for more logging."`
+	Hostname         string              `arg:"env:DOZZLE_HOSTNAME" help:"sets the hostname for display. This is useful with multiple Limascope instances."`
+	Level            string              `arg:"env:DOZZLE_LEVEL" default:"info" help:"set Limascope log level. Use debug for more logging."`
 	AuthProvider     string              `arg:"--auth-provider,env:DOZZLE_AUTH_PROVIDER" default:"none" help:"sets the auth provider to use. Currently only forward-proxy is supported."`
 	AuthTTL          string              `arg:"--auth-ttl,env:DOZZLE_AUTH_TTL" default:"session" help:"sets the TTL for the auth token. Accepts duration values like 12h. Valid time units are s, m, h"`
 	AuthHeaderUser   string              `arg:"--auth-header-user,env:DOZZLE_AUTH_HEADER_USER" default:"Remote-User" help:"sets the HTTP Header to use for username in Forward Proxy configuration."`

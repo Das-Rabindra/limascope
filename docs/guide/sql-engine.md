@@ -10,7 +10,7 @@ This feature is currently in beta and is available to all users. If you have any
 
 ## Getting Started
 
-To get started with the SQL Engine, you will need to have a dataset that you can query. Only JSON logs can be queried using SQL. Dozzle leverages the power of WebAssembly to run SQL queries in the browser, which means that your data never leaves your machine.
+To get started with the SQL Engine, you will need to have a dataset that you can query. Only JSON logs can be queried using SQL. Limascope leverages the power of WebAssembly to run SQL queries in the browser, which means that your data never leaves your machine.
 
 To start using the SQL Engine, make sure you have JSON logs and navigate to the dropdown and choose `SQL Analytics`. There is also a keyboard shortcut `^+⇧+f` or `⌘+⇧+f` to quickly open the SQL Engine.
 
@@ -18,7 +18,7 @@ To start using the SQL Engine, make sure you have JSON logs and navigate to the 
 
 The SQL Engine uses WebAssembly to run SQL queries in the browser with DuckDB. When the SQL Engine is first opened, DuckDB WASM is downloaded and initialized in the browser. This could take a while if you are on a slow connection. The SQL Engine then reads _only_ the JSON logs and creates a virtual table in DuckDB. This allows you to run SQL queries against your data in real-time.
 
-The query that Dozzle runs initially is similar to:
+The query that Limascope runs initially is similar to:
 
 ```sql
 CREATE TABLE logs AS SELECT unnest(m) FROM 'logs.json'

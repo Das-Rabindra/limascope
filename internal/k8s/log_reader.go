@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"io"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 )
 
 type LogReader struct {

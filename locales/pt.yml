@@ -54,19 +54,19 @@ error:
   events-stream:
     title: Erro Inesperado
     message: >-
-      A interface do Dozzle não conseguiu se conectar à API. Verifique suas configurações de rede. Se você estiver usando um proxy reverso, certifique-se de que ele esteja configurado corretamente.
+      A interface do Limascope não conseguiu se conectar à API. Verifique suas configurações de rede. Se você estiver usando um proxy reverso, certifique-se de que ele esteja configurado corretamente.
   events-timeout:
     title: Algo não está certo
     message: >-
-      A interface do Dozzle atingiu o tempo limite ao conectar-se à API. Verifique a conexão de rede e tente novamente.
+      A interface do Limascope atingiu o tempo limite ao conectar-se à API. Verifique a conexão de rede e tente novamente.
 alert:
   redirected:
     title: Redirecionado para novo container
-    message: O Dozzle redirecionou você automaticamente para o novo container {containerId}.
+    message: O Limascope redirecionou você automaticamente para o novo container {containerId}.
   similar-container-found:
     title: Container similar encontrado
     message: >-
-      O Dozzle encontrou um container similar {containerId} que está em execução no mesmo host e mudará automaticamente para ele, a menos que você clique em 'Cancelar'.
+      O Limascope encontrou um container similar {containerId} que está em execução no mesmo host e mudará automaticamente para ele, a menos que você clique em 'Cancelar'.
 title:
   page-not-found: Página não encontrada
   login: Autenticação Requerida
@@ -83,7 +83,7 @@ placeholder:
   search: Pesquisar
 settings:
   help-support: >
-    Por favor, apoie o Dozzle doando ou nos patrocinando no GitHub. Suas contribuições nos ajudam a melhorar o Dozzle para todos. Obrigado! 🙏🏼
+    Por favor, apoie o Limascope doando ou nos patrocinando no GitHub. Suas contribuições nos ajudam a melhorar o Limascope para todos. Obrigado! 🙏🏼
   display: Exibição
   locale: Sobrescrever idioma
   small-scrollbars: Usar barras de rolagem menores
@@ -95,8 +95,8 @@ settings:
   options: Opções
   show-stopped-containers: Mostrar containers parados
   about: Sobre
-  search: Habilitar pesquisa com Dozzle usando
-  using-version: Você está usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Habilitar pesquisa com Limascope usando
+  using-version: Você está usando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Nova versão disponível! Atualize para <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Mostrar rótulos stdout e stderr

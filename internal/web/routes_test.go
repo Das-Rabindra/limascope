@@ -8,8 +8,8 @@ import (
 	"io"
 	"io/fs"
 
-	"github.com/amir20/dozzle/internal/container"
-	docker_support "github.com/amir20/dozzle/internal/support/docker"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	docker_support "github.com/Das-Rabindra/limascope/internal/support/docker"
 	"github.com/docker/docker/api/types/system"
 	"github.com/go-chi/chi/v5"
 

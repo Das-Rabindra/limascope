@@ -1,6 +1,6 @@
 services:
   agent:
-    image: amir20/dozzle:pr-3196
+    image: Das-Rabindra/limascope:pr-3196
     command: agent
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

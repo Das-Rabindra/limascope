@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/beme/abide"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

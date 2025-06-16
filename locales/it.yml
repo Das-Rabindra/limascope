@@ -54,19 +54,19 @@ error:
   events-stream:
     title: Errore inaspettato
     message: >-
-      Dozzle UI non è stato in grado di connettersi alle API. Controlla la tua configurazione di rete. Se stai utilizzando un reverse proxy, assicurati di averlo configurato correttamente.
+      Limascope UI non è stato in grado di connettersi alle API. Controlla la tua configurazione di rete. Se stai utilizzando un reverse proxy, assicurati di averlo configurato correttamente.
   events-timeout:
     title: Qualcosa non è corretto
     message: >-
-      Dozzle UI timed out durante la connessione alle API. Controlla la configurazione di rete e riprova.
+      Limascope UI timed out durante la connessione alle API. Controlla la configurazione di rete e riprova.
 alert:
   redirected:
     title: Reindirizzamento ad un nuovo container
-    message: Dozzle si è reindirizzato automaticamente ad un nuovo container {containerId}.
+    message: Limascope si è reindirizzato automaticamente ad un nuovo container {containerId}.
   similar-container-found:
     title: Trovato un Container simile
     message: >-
-      Dozzle ha trovato un Container simile {containerId} in esecuzione sullo stesso Host e passerà automaticamente ad esso se non premi 'Cancel'.
+      Limascope ha trovato un Container simile {containerId} in esecuzione sullo stesso Host e passerà automaticamente ad esso se non premi 'Cancel'.
 title:
   page-not-found: Pagina non trovata
   login: Autenticazione richiesta
@@ -83,7 +83,7 @@ placeholder:
   search: Cerca
 settings:
   help-support: >
-    Per favore sostieni Dozzle donando o sponsorizzandoci su GitHub. I tuoi contributi ci aiutano a migliorare Dozzle per tutti. Grazie! 🙏🏼
+    Per favore sostieni Limascope donando o sponsorizzandoci su GitHub. I tuoi contributi ci aiutano a migliorare Limascope per tutti. Grazie! 🙏🏼
   display: Visualizza
   locale: Sovrascrivi Lingua
   small-scrollbars: Usa una scrollbars più piccola
@@ -95,8 +95,8 @@ settings:
   options: Opzioni
   show-stopped-containers: Visualizza i container arrestati
   about: Circa
-  search: Abilita la ricerca attraverso Dozzle
-  using-version: Stai utilizzando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Abilita la ricerca attraverso Limascope
+  using-version: Stai utilizzando <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Nuova versione disponibile! Aggiorna a <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.
   show-std: Visualizza stdout e stderr

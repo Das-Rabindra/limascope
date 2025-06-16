@@ -2,15 +2,15 @@
   "name": "dozzle",
   "version": "8.13.0",
   "description": "Realtime log viewer for docker containers.",
-  "homepage": "https://github.com/amir20/dozzle#readme",
+  "homepage": "https://github.com/Das-Rabindra/limascope#readme",
   "bugs": {
-    "url": "https://github.com/amir20/dozzle/issues"
+    "url": "https://github.com/Das-Rabindra/limascope/issues"
   },
   "packageManager": "pnpm@10.12.1",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amir20/dozzle.git"
+    "url": "git+https://github.com/Das-Rabindra/limascope.git"
   },
   "license": "ISC",
   "author": "Amir Raminfar <findamir@gmail.com>",

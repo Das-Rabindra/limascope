@@ -4,11 +4,11 @@ title: Kubernetes Support
 
 # Kubernetes Support <Badge type="warning" text="beta" /> <Badge type="tip" text="v8.11.x" />
 
-Dozzle now supports Kubernetes, allowing you to view logs from your Kubernetes pods. This feature is available in `v8.11` version of Dozzle.
+Limascope now supports Kubernetes, allowing you to view logs from your Kubernetes pods. This feature is available in `v8.11` version of Limascope.
 
 ## Kubernetes Setup
 
-To set up Dozzle in Kubernetes, you can use the following YAML configuration using `DOZZLE_MODE=k8s`. This configuration includes a deployment and a service to expose Dozzle.
+To set up Limascope in Kubernetes, you can use the following YAML configuration using `DOZZLE_MODE=k8s`. This configuration includes a deployment and a service to expose Limascope.
 
 ```yaml
 # rbac.yaml
@@ -61,7 +61,7 @@ spec:
       serviceAccountName: pod-viewer
       containers:
         - name: dozzle
-          image: amir20/dozzle:latest
+          image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
           env:
@@ -83,16 +83,16 @@ spec:
       protocol: TCP
 ```
 
-This configuration creates a service account, a cluster role, and a cluster role binding to allow Dozzle to access the necessary Kubernetes resources. It also creates a deployment for Dozzle and exposes it via a service.
+This configuration creates a service account, a cluster role, and a cluster role binding to allow Limascope to access the necessary Kubernetes resources. It also creates a deployment for Limascope and exposes it via a service.
 
-All other features are supported as well, including authentication, filtering, and more. You can use the same environment variables as you would in Docker to configure Dozzle in Kubernetes.
+All other features are supported as well, including authentication, filtering, and more. You can use the same environment variables as you would in Docker to configure Limascope in Kubernetes.
 
 > [!NOTE]
-> Dozzle in Kubernetes is a new feature and may have some limitations compared to the Docker version. Please use this [discussion](https://github.com/amir20/dozzle/discussions/3614) to report any issues or suggestions for improvement.
+> Limascope in Kubernetes is a new feature and may have some limitations compared to the Docker version. Please use this [discussion](https://github.com/Das-Rabindra/limascope/discussions/3614) to report any issues or suggestions for improvement.
 
 ## Metrics API
 
-Dozzle relies on the [Kubernetes Metrics API](https://github.com/kubernetes-sigs/metrics-server) to retrieve resource usage information. The API can be installed using the following command:
+Limascope relies on the [Kubernetes Metrics API](https://github.com/kubernetes-sigs/metrics-server) to retrieve resource usage information. The API can be installed using the following command:
 
 ```bash
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
@@ -104,13 +104,13 @@ To verify that the API is running, you can run the following command:
 kubectl top pod
 ```
 
-For now this is required to use Dozzle in Kubernetes.
+For now this is required to use Limascope in Kubernetes.
 
 ## Namespaces and Filters
 
 ### Namespaces
 
-By default, Dozzle will monitor all namespaces in the cluster. If you want to restrict Dozzle to a specific namespace, you can set the `DOZZLE_NAMESPACE` environment variable to the name of the namespace.
+By default, Limascope will monitor all namespaces in the cluster. If you want to restrict Limascope to a specific namespace, you can set the `DOZZLE_NAMESPACE` environment variable to the name of the namespace.
 
 ```yaml
 apiVersion: apps/v1
@@ -129,7 +129,7 @@ spec:
       serviceAccountName: pod-viewer
       containers:
         - name: dozzle
-          image: amir20/dozzle:latest
+          image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
           env:
@@ -140,11 +140,11 @@ spec:
 ```
 
 > [!NOTE]
-> Dozzle supports multiple namespaces, you can set the `DOZZLE_NAMESPACES` environment variable to a comma separated list of namespaces. When multiple namespaces are specified, Dozzle will monitor each namespace separately and combine the results.
+> Limascope supports multiple namespaces, you can set the `DOZZLE_NAMESPACES` environment variable to a comma separated list of namespaces. When multiple namespaces are specified, Limascope will monitor each namespace separately and combine the results.
 
 ### Labels and Filters
 
-`DOZZLE_FILTER` behave similarlty to Docker filters. You can limit the scope of Dozzle using the `DOZZLE_FILTER` environment variable. For example, to scope only to `env=prod`:
+`DOZZLE_FILTER` behave similarlty to Docker filters. You can limit the scope of Limascope using the `DOZZLE_FILTER` environment variable. For example, to scope only to `env=prod`:
 
 ```yaml
 apiVersion: apps/v1
@@ -163,7 +163,7 @@ spec:
       serviceAccountName: pod-viewer
       containers:
         - name: dozzle
-          image: amir20/dozzle:latest
+          image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
           env:

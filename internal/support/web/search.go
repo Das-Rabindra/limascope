@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 )
 
 const (

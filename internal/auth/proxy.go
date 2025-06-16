@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	"github.com/rs/zerolog/log"
 )
 

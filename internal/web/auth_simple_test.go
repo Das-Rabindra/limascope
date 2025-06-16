@@ -11,7 +11,7 @@ import (
 
 	"testing"
 
-	"github.com/amir20/dozzle/internal/auth"
+	"github.com/Das-Rabindra/limascope/internal/auth"
 	"github.com/beme/abide"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

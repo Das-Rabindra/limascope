@@ -27,7 +27,7 @@ label:
   running: Em execução
   total-cpu-usage: Utilização total da CPU
   total-mem-usage: Total de utilização da memória
-  dozzle-version: Versão Dozzle
+  dozzle-version: Versão Limascope
   all: Tudo
   host: Anfitrião
   hosts: Anfitriões
@@ -58,20 +58,20 @@ error:
   events-stream:
     title: Erro inesperado
     message: >-
-      Dozzle UI não conseguiu ligar à API. Por favor, verifique as suas definições de rede.
+      Limascope UI não conseguiu ligar à API. Por favor, verifique as suas definições de rede.
       Se estiver a utilizar um proxy reverso, certifique-se de que está configurado correctamente.
   events-timeout:
     title: Algo não está bem
     message: >-
-      Dozzle UI esgotou o tempo limite ao ligar à API. Por favor, verifique a ligação de rede e tente novamente.
+      Limascope UI esgotou o tempo limite ao ligar à API. Por favor, verifique a ligação de rede e tente novamente.
 alert:
   redirected:
     title: Redirecionado para novo contentor
-    message: Dozzle redirecionou-o automaticamente para o novo contentor {containerId}.
+    message: Limascope redirecionou-o automaticamente para o novo contentor {containerId}.
   similar-container-found:
     title: Contentor semelhante encontrado
     message: >-
-      Dozzle encontrou um contentor semelhante {containerId} que está a ser executado no mesmo anfitrião. Quer mudar para ele?
+      Limascope encontrou um contentor semelhante {containerId} que está a ser executado no mesmo anfitrião. Quer mudar para ele?
 title:
   page-not-found: Página não encontrada
   login: Autenticação Requerida
@@ -88,14 +88,14 @@ placeholder:
   search: Pesquisa
 settings:
   help-support: >
-    Por favor, apoie o Dozzle doando ou nos patrocinando no GitHub. Suas contribuições nos ajudam a melhorar o Dozzle para todos. Obrigado! 🙏🏼
+    Por favor, apoie o Limascope doando ou nos patrocinando no GitHub. Suas contribuições nos ajudam a melhorar o Limascope para todos. Obrigado! 🙏🏼
   display: Visão
   locale: Localidade
   small-scrollbars: Usar barras de rolagem mais pequenas
   show-timesamps: Mostrar carimbos de tempo
   soft-wrap: Linhas de texto de embrulho suave
   12-24-format: >-
-    Por defeito, Dozzle utilizará o locale do seu navegador para formatar a hora. Pode
+    Por defeito, Limascope utilizará o locale do seu navegador para formatar a hora. Pode
     forçar ao estilo de 12 ou 24 horas.
   font-size: Tamanho de letra a utilizar para os registos
   color-scheme: Esquema de cores
@@ -103,8 +103,8 @@ settings:
   datetime-format: Formato de data e hora
   show-stopped-containers: Mostrar contentores parados
   about: Acerca de
-  search: Habilitar a pesquisa com Dozzle usando
-  using-version: Está a usar <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Dozzle</a> {version}.
+  search: Habilitar a pesquisa com Limascope usando
+  using-version: Está a usar <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Está disponível uma nova versão! Actualização para
     <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.

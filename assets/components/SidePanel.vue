@@ -3,7 +3,7 @@
     <h1>
       <router-link :to="{ name: '/' }" class="flex w-full items-center gap-4 overflow-hidden text-4xl font-thin">
         <Logo class="h-14 w-14 shrink-0" />
-        Dozzle
+        Limascope
       </router-link>
 
       <small class="mt-4 block text-sm font-light" v-if="hostname">{{ hostname }}</small>

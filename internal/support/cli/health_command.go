@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/amir20/dozzle/internal/healthcheck"
+	"github.com/Das-Rabindra/limascope/internal/healthcheck"
 	"github.com/rs/zerolog/log"
 )
 

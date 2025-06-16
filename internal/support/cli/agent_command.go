@@ -10,8 +10,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/amir20/dozzle/internal/agent"
-	"github.com/amir20/dozzle/internal/docker"
+	"github.com/Das-Rabindra/limascope/internal/agent"
+	"github.com/Das-Rabindra/limascope/internal/docker"
 	"github.com/rs/zerolog/log"
 )
 
@@ -50,7 +50,7 @@ func (a *AgentCmd) Run(args Args, embeddedCerts embed.FS) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 	go func() {
-		log.Info().Msgf("Dozzle agent version %s", args.Version())
+		log.Info().Msgf("Limascope agent version %s", args.Version())
 		log.Info().Msgf("Agent listening on %s", listener.Addr().String())
 
 		if err := server.Serve(listener); err != nil {

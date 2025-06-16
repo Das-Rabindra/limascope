@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 	lop "github.com/samber/lo/parallel"
 
 	"github.com/puzpuzpuz/xsync/v4"

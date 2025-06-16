@@ -9,9 +9,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/amir20/dozzle/internal/container"
-	docker_support "github.com/amir20/dozzle/internal/support/docker"
-	"github.com/amir20/dozzle/internal/utils"
+	"github.com/Das-Rabindra/limascope/internal/container"
+	docker_support "github.com/Das-Rabindra/limascope/internal/support/docker"
+	"github.com/Das-Rabindra/limascope/internal/utils"
 	"github.com/beme/abide"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

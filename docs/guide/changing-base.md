@@ -2,20 +2,20 @@
 title: Changing Application Base
 ---
 
-# Changing Dozzle Base
+# Changing Limascope Base
 
-Dozzle by default mounts to "/". This can be changed with the `--base` flag. For example, if you want to mount to "/foobar" then you can use `--base /foobar` or the env variable `DOZZLE_BASE`.
+Limascope by default mounts to "/". This can be changed with the `--base` flag. For example, if you want to mount to "/foobar" then you can use `--base /foobar` or the env variable `DOZZLE_BASE`.
 
 ::: code-group
 
 ```sh
-docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 amir20/dozzle --base /foobar
+docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabindra/limascope --base /foobar
 ```
 
 ```yaml [docker-compose.yml]
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
@@ -26,11 +26,11 @@ services:
 
 :::
 
-Dozzle will be available at `http://localhost:8080/foobar/`. This option rewrites all assets to `/foobar/{file.path}` and automatically redirects `/foobar` to `/foobar/`.
+Limascope will be available at `http://localhost:8080/foobar/`. This option rewrites all assets to `/foobar/{file.path}` and automatically redirects `/foobar` to `/foobar/`.
 
 ## Example with Proxy
 
-Here is an example with Nginx to proxy Dozzle with a different base:
+Here is an example with Nginx to proxy Limascope with a different base:
 
 ```nginx
 location ^~ /foobar/ {

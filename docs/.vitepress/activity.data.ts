@@ -4,8 +4,8 @@ export { data };
 export default {
   async load() {
     const urls = [
-      "https://api.github.com/repos/amir20/dozzle",
-      "https://hub.docker.com/v2/namespaces/amir20/repositories/dozzle",
+      "https://api.github.com/repos/Das-Rabindra/limascope",
+      "https://hub.docker.com/v2/namespaces/Das-Rabindra/limascope",
     ];
 
     const responses = await Promise.all(urls.map((url) => fetch(url).then((res) => res.json())));

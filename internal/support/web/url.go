@@ -3,7 +3,7 @@ package support_web
 import (
 	"regexp"
 
-	"github.com/amir20/dozzle/internal/container"
+	"github.com/Das-Rabindra/limascope/internal/container"
 )
 
 const (

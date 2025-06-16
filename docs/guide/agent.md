@@ -4,25 +4,25 @@ title: Agent Mode
 
 # Agent Mode <Badge type="warning" text="Docker Only" />
 
-Dozzle can run in agent mode which can expose Docker hosts to other Dozzle instances. All communication is done over a secured connection using TLS. This means that you can deploy Dozzle on a remote host and connect to it from your local machine.
+Limascope can run in agent mode which can expose Docker hosts to other Limascope instances. All communication is done over a secured connection using TLS. This means that you can deploy Limascope on a remote host and connect to it from your local machine.
 
 > [!NOTE] Using Docker Swarm?
-> If you are using Docker Swarm Mode, you don't need to use agents. Dozzle will automatically discover itself and create a cluster using swarm mode. See [Swarm Mode](/guide/swarm-mode) for more information.
+> If you are using Docker Swarm Mode, you don't need to use agents. Limascope will automatically discover itself and create a cluster using swarm mode. See [Swarm Mode](/guide/swarm-mode) for more information.
 
 ## How to Create an Agent
 
-To create a Dozzle agent, you need to run Dozzle with the `agent` subcommand. Here is an example:
+To create a Limascope agent, you need to run Limascope with the `agent` subcommand. Here is an example:
 
 ::: code-group
 
 ```sh
-docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 amir20/dozzle:latest agent
+docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 Das-Rabindra/limascope:latest agent
 ```
 
 ```yaml [docker-compose.yml]
 services:
   dozzle-agent:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -33,10 +33,10 @@ services:
 :::
 
 > [!NOTE] Docker Socket Proxy users
-> If you are using a remote agent you **CANNOT** add a socket proxy on top of the agent. Dozzle agents **REPLACE** using a proxy, see [Remote Hosts](/guide/remote-hosts.md) for more info and how to use a socket proxy instead of an agent.
+> If you are using a remote agent you **CANNOT** add a socket proxy on top of the agent. Limascope agents **REPLACE** using a proxy, see [Remote Hosts](/guide/remote-hosts.md) for more info and how to use a socket proxy instead of an agent.
 
 
-The agent will start and listen on port `7007`. You can connect to the agent using the Dozzle UI by providing the agent's IP address and port. The agent will only show the containers that are available on the host where the agent is running.
+The agent will start and listen on port `7007`. You can connect to the agent using the Limascope UI by providing the agent's IP address and port. The agent will only show the containers that are available on the host where the agent is running.
 
 > [!TIP]
 > You don't need to expose port 7007 if using Docker network. The agent will be available to other containers on the same network.
@@ -48,17 +48,17 @@ To connect to an agent, you need to provide the agent's IP address and port. Her
 ::: code-group
 
 ```sh
-docker run -p 8080:8080 amir20/dozzle:latest --remote-agent agent-ip:7007
+docker run -p 8080:8080 Das-Rabindra/limascope:latest --remote-agent agent-ip:7007
 ```
 
 ```yaml [docker-compose.yml]
 services:
   dozzle:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_REMOTE_AGENT=agent:7007
     ports:
-      - 8080:8080 # Dozzle UI port
+      - 8080:8080 # Limascope UI port
 ```
 
 :::
@@ -74,7 +74,7 @@ Note that when connecting remotely, you don't need to mount local Docker socket.
 
 If you are seeing `An agent with an existing ID was found. Removing the duplicate host.` then you have two hosts that use the same Server ID.
 
-Dozzle utilizes the Docker API to collect information about hosts. Each agent requires a unique host ID that remains consistent across restarts to ensure proper identification. Currently, agents identify the host using either Docker's system ID or node ID.
+Limascope utilizes the Docker API to collect information about hosts. Each agent requires a unique host ID that remains consistent across restarts to ensure proper identification. Currently, agents identify the host using either Docker's system ID or node ID.
 
 If you are operating in a Swarm environment, the node ID will be employed for this purpose. However, if you notice that not all hosts are visible, it may be due to the presence of duplicate hosts configured with the same host ID.
 
@@ -84,14 +84,14 @@ To resolve this issue, you should remove `/var/lib/docker/engine-id` from your s
 
 ### Setting Up Healthcheck
 
-You can set a healthcheck for the agent, similar to the healthcheck for the main Dozzle instance. When running in agent mode, healthcheck checks agent connection to Docker. If Docker is not reachable, the agent will be marked as unhealthy and will not be shown in the UI.
+You can set a healthcheck for the agent, similar to the healthcheck for the main Limascope instance. When running in agent mode, healthcheck checks agent connection to Docker. If Docker is not reachable, the agent will be marked as unhealthy and will not be shown in the UI.
 
 To set up healthcheck, use the `healthcheck` subcommand. Here is an example:
 
 ```yml
 services:
   dozzle-agent:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     healthcheck:
       test: ["CMD", "/dozzle", "healthcheck"]
@@ -107,18 +107,18 @@ services:
 
 ### Changing Agent's Name
 
-Similar to Dozzle instance, you can change the agent's name by providing the `DOZZLE_HOSTNAME` environment variable. Here is an example:
+Similar to Limascope instance, you can change the agent's name by providing the `DOZZLE_HOSTNAME` environment variable. Here is an example:
 
 ::: code-group
 
 ```sh
-docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 amir20/dozzle:latest agent --hostname my-special-name
+docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 Das-Rabindra/limascope:latest agent --hostname my-special-name
 ```
 
 ```yaml [docker-compose.yml]
 services:
   dozzle-agent:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     environment:
       - DOZZLE_HOSTNAME=my-special-name
@@ -134,12 +134,12 @@ This will change the agent's name to `my-special-name` and will be reflected on 
 
 ### Setting Up Filters
 
-You can set up filters for the agent to limit the containers it can access. These filters are passed directly to Docker, restricting what Dozzle can view.
+You can set up filters for the agent to limit the containers it can access. These filters are passed directly to Docker, restricting what Limascope can view.
 
 ```yaml
 services:
   dozzle-agent:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     environment:
       - DOZZLE_FILTER=label=color
@@ -151,14 +151,14 @@ This will restrict the agent to displaying only containers with the label `color
 
 ### Custom Certificates
 
-By default, Dozzle uses self-signed certificates for communication between agents. This is a private certificate which is only valid to other Dozzle instances. This is secure and recommended for most use cases. However, if Dozzle is exposed externally and an attacker knows exactly which port the agent is running on, then they can set up their own Dozzle instance and connect to the agent. To prevent this, you can provide your own certificates.
+By default, Limascope uses self-signed certificates for communication between agents. This is a private certificate which is only valid to other Limascope instances. This is secure and recommended for most use cases. However, if Limascope is exposed externally and an attacker knows exactly which port the agent is running on, then they can set up their own Limascope instance and connect to the agent. To prevent this, you can provide your own certificates.
 
 To provide custom certificates, you need to mount or use secrets to provide the certificates. Here is an example:
 
 ```yml
 services:
   agent:
-    image: amir20/dozzle:latest
+    image: Das-Rabindra/limascope:latest
     command: agent
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -177,9 +177,9 @@ secrets:
 ```
 
 > [!TIP]
-> Docker secrets are preferred for providing certificates. They can be created using `docker secret create` command or as the example above using `docker-compose.yml`. The same certificates should be provided to the Dozzle instance connecting to the agent.
+> Docker secrets are preferred for providing certificates. They can be created using `docker secret create` command or as the example above using `docker-compose.yml`. The same certificates should be provided to the Limascope instance connecting to the agent.
 
-This will mount the `cert.pem` and `key.pem` files to the agent. The agent will use these certificates for communication. The same certificates should be provided to the Dozzle instance connecting to the agent.
+This will mount the `cert.pem` and `key.pem` files to the agent. The agent will use these certificates for communication. The same certificates should be provided to the Limascope instance connecting to the agent.
 
 To generate certificates, you can use the following command:
 

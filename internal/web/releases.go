@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/amir20/dozzle/internal/cache"
-	"github.com/amir20/dozzle/internal/releases"
+	"github.com/Das-Rabindra/limascope/internal/cache"
+	"github.com/Das-Rabindra/limascope/internal/releases"
 	"github.com/rs/zerolog/log"
 )
 
