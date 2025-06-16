@@ -30,7 +30,7 @@ const members = [
       Team
     </template>
     <template #lead>
-      Limascope is created and maintained by the following people.
+      Dozzle is created and maintained by the following people.
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
