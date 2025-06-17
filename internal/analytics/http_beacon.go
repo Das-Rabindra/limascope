@@ -18,7 +18,7 @@ func SendBeacon(e types.BeaconEvent) error {
 		return err
 	}
 
-	req, err := http.NewRequest("POST", "https://b.dozzle.dev/event", bytes.NewBuffer(jsonValue))
+	req, err := http.NewRequest("POST", "https://b.limascope.dev/event", bytes.NewBuffer(jsonValue))
 	if err != nil {
 		return err
 	}

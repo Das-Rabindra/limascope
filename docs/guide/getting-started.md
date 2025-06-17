@@ -22,20 +22,20 @@ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabi
 ```yaml [docker-compose.yml]
 # Run with docker compose up -d
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 8080:8080
     environment:
-      # Uncomment to enable container actions (stop, start, restart). See https://dozzle.dev/guide/actions
+      # Uncomment to enable container actions (stop, start, restart). See https://limascope.dev/guide/actions
       # - DOZZLE_ENABLE_ACTIONS=true
       #
-      # Uncomment to allow access to container shells. See https://dozzle.dev/guide/shell
+      # Uncomment to allow access to container shells. See https://limascope.dev/guide/shell
       # - DOZZLE_ENABLE_SHELL=true
       #
-      # Uncomment to enable authentication. See https://dozzle.dev/guide/authentication
+      # Uncomment to enable authentication. See https://limascope.dev/guide/authentication
       # - DOZZLE_AUTH_PROVIDER=simple
 ```
 
@@ -49,10 +49,10 @@ services:
 
 Limascope supports running in Swarm mode by deploying it on every node. To run Limascope in Swarm mode, you can use the following configuration:
 
-```yaml [dozzle-stack.yml]
-# Run with docker stack deploy -c dozzle-stack.yml <name>
+```yaml [limascope-stack.yml]
+# Run with docker stack deploy -c limascope-stack.yml <name>
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_MODE=swarm
@@ -61,18 +61,18 @@ services:
     ports:
       - 8080:8080
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 networks:
-  dozzle:
+  limascope:
     driver: overlay
 ```
 
 Then you can deploy the stack using the following command:
 
 ```bash
-docker stack deploy -c dozzle-stack.yml <name>
+docker stack deploy -c limascope-stack.yml <name>
 ```
 
 See [swarm mode](/guide/swarm-mode) for more information.
@@ -84,7 +84,7 @@ Limascope supports running in Kubernetes. It only needs to be deployed on one no
 <details>
 <summary>Kubernetes Configuration</summary>
 
-```yaml [k8s-dozzle.yml]
+```yaml [k8s-limascope.yml]
 # rbac.yaml
 apiVersion: v1
 kind: ServiceAccount
@@ -122,20 +122,20 @@ roleRef:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dozzle
+  name: limascope
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dozzle
+      app: limascope
   template:
     metadata:
       labels:
-        app: dozzle
+        app: limascope
     spec:
       serviceAccountName: pod-viewer
       containers:
-        - name: dozzle
+        - name: limascope
           image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
@@ -149,7 +149,7 @@ spec:
 Apply the configuration using the following command:
 
 ```sh
-kubectl apply -f k8s-dozzle.yml
+kubectl apply -f k8s-limascope.yml
 ```
 
 See [Kubernetes mode](/guide/k8s) for more information.

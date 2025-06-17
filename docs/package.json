@@ -3,7 +3,7 @@
   "type": "module",
   "name": "docs",
   "devDependencies": {
-    "dozzle": "workspace:*"
+    "limascope": "workspace:*"
   },
   "dependencies": {
     "@fontsource-variable/playfair-display": "^5.2.6"

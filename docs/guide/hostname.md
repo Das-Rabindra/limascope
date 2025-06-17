@@ -16,7 +16,7 @@ docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-R
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

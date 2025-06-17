@@ -22,12 +22,12 @@ services:
       - DOZZLE_NO_ANALYTICS=1
     build:
       context: .
-  dozzle:
-    container_name: dozzle
+  limascope:
+    container_name: limascope
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
-      - DOZZLE_FILTER=name=dozzle
+      - DOZZLE_FILTER=name=limascope
       - DOZZLE_NO_ANALYTICS=1
       - DOZZLE_HOSTNAME=localhost
       - DOZZLE_LEVEL=debug
@@ -39,7 +39,7 @@ services:
     container_name: remote
     environment:
       - DOZZLE_REMOTE_HOST=tcp://proxy:2375|remote-host
-      - DOZZLE_FILTER=name=dozzle
+      - DOZZLE_FILTER=name=limascope
       - DOZZLE_NO_ANALYTICS=1
     ports:
       - 5050:8080
@@ -48,7 +48,7 @@ services:
     depends_on:
       proxy:
         condition: service_healthy
-  dozzle-with-agent:
+  limascope-with-agent:
     container_name: with-agent
     environment:
       - DOZZLE_REMOTE_AGENT=agent:7007
@@ -65,10 +65,10 @@ services:
     container_name: agent
     command: agent
     environment:
-      - DOZZLE_FILTER=name=dozzle
+      - DOZZLE_FILTER=name=limascope
       - DOZZLE_NO_ANALYTICS=1
     healthcheck:
-      test: ["CMD", "/dozzle", "healthcheck"]
+      test: ["CMD", "/limascope", "healthcheck"]
       interval: 5s
       retries: 5
       start_period: 5s
@@ -104,6 +104,6 @@ services:
       - PWTEST_SKIP_TEST_OUTPUT=1
       - CI=1
     depends_on:
-      - dozzle
+      - limascope
       - custom_base
       - remote

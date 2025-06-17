@@ -22,8 +22,8 @@ docker run -v /var/log/system.log:/var/log/test.log alpine tail -f /var/log/test
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle-from-file:
-    container_name: dozzle-from-file
+  limascope-from-file:
+    container_name: limascope-from-file
     image: alpine
     volumes:
       - /var/log/system.log:/var/log/stream.log

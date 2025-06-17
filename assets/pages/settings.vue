@@ -9,11 +9,6 @@
         {{ $t("settings.help-support") }}
 
         <ul class="mt-6 flex gap-2">
-          <li>
-            <a href="https://github.com/Das-Rabindra/limascope" target="_blank" rel="noopener noreferrer" class="btn">
-              <mdi:github /> Das-Rabindra/limascope
-            </a>
-          </li>
         </ul>
       </div>
     </section>

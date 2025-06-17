@@ -53,7 +53,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 📜 Limascope logs are required for debugging purposes. You may need to enable debug mode. See https://dozzle.dev/guide/debugging.
+      label: 📜 Limascope logs are required for debugging purposes. You may need to enable debug mode. See https://limascope.dev/guide/debugging.
       description: Drag log files or paste the logs into the text input below
     validations:
       required: true

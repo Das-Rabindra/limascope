@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: dozzle-ingress
+  name: limascope-ingress
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-    - host: dozzle.k3d.local
+    - host: limascope.k3d.local
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: dozzle-service
+                name: limascope-service
                 port:
                   number: 8080

@@ -18,7 +18,7 @@ To deploy on every node in the swarm, you can use `mode: global`. This will depl
 
 ```yml
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_MODE=swarm
@@ -27,18 +27,18 @@ services:
     ports:
       - 8080:8080
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 networks:
-  dozzle:
+  limascope:
     driver: overlay
 ```
 
 Note that the `DOZZLE_MODE` environment variable is set to `swarm`. This tells Limascope to automatically discover other Limascope instances in the swarm. The `overlay` network is used to create the mesh network between the different Limascope instances.
 
 > [!NOTE]
-> Due to implementation details, <strike>the name for the service must be exactly `dozzle`</strike>. This is no longer required starting with version `v8.2`. You can name the service anything you want. The service name is automatically detected by Limascope using `com.docker.swarm.service.name` label.
+> Due to implementation details, <strike>the name for the service must be exactly `limascope`</strike>. This is no longer required starting with version `v8.2`. You can name the service anything you want. The service name is automatically detected by Limascope using `com.docker.swarm.service.name` label.
 
 ## Setting Up Simple Authentication in Swarm Mode
 
@@ -46,7 +46,7 @@ To set up simple authentication, you can use Docker secrets to store `users.yml`
 
 ```yml
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_LEVEL=debug
@@ -61,12 +61,12 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 
 networks:
-  dozzle:
+  limascope:
     driver: overlay
 secrets:
   users:
@@ -86,7 +86,7 @@ Simply [add the remote agent](/guide/agent#how-to-connect-to-an-agent) to your S
 
 ```yml
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_MODE=swarm
@@ -96,11 +96,11 @@ services:
     ports:
       - 8080:8080
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 networks:
-  dozzle:
+  limascope:
     driver: overlay
 ```
 

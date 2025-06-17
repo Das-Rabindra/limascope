@@ -27,7 +27,7 @@ label:
   running: Çalışıyor
   total-cpu-usage: Toplam CPU Kullanımı
   total-mem-usage: Toplam Bellek Kullanımı
-  dozzle-version: Limascope Sürümü
+  limascope-version: Limascope Sürümü
   all: Tümü
   host: Sunucu
   hosts: Sunucular
@@ -105,7 +105,7 @@ settings:
   show-stopped-containers: Durdurulan konteynerleri göster
   about: Hakkında
   search: Limascope kullanarak aramayı etkinleştir
-  using-version: <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version} kullanıyorsunuz.
+  using-version: <a href="https://limascope.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version} kullanıyorsunuz.
   update-available: >-
     Yeni sürüm mevcut! <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a> sürümüne güncelleyin.

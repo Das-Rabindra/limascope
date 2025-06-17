@@ -27,7 +27,7 @@ label:
   running: Em execução
   total-cpu-usage: Utilização total da CPU
   total-mem-usage: Total de utilização da memória
-  dozzle-version: Versão Limascope
+  limascope-version: Versão Limascope
   all: Tudo
   host: Anfitrião
   hosts: Anfitriões
@@ -104,7 +104,7 @@ settings:
   show-stopped-containers: Mostrar contentores parados
   about: Acerca de
   search: Habilitar a pesquisa com Limascope usando
-  using-version: Está a usar <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
+  using-version: Está a usar <a href="https://limascope.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}.
   update-available: >-
     Está disponível uma nova versão! Actualização para
     <a href="{href}" target="_blank" rel="noreferrer noopener">{nextVersion}</a>.

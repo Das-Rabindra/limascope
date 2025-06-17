@@ -63,6 +63,6 @@ See [agent](/guide/agent) for more information.
 
 ## Healthcheck
 
-Limascope supports healthcheck using `dozzle healthcheck` command. It is not enabled by default as it adds extra CPU usage. To use `healthcheck`, you need to configure it.
+Limascope supports healthcheck using `limascope healthcheck` command. It is not enabled by default as it adds extra CPU usage. To use `healthcheck`, you need to configure it.
 
 See [healthcheck](/guide/healthcheck) for more information.

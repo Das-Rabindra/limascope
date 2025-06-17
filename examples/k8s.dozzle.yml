@@ -35,20 +35,20 @@ roleRef:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dozzle
+  name: limascope
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dozzle
+      app: limascope
   template:
     metadata:
       labels:
-        app: dozzle
+        app: limascope
     spec:
       serviceAccountName: pod-viewer
       containers:
-        - name: dozzle
+        - name: limascope
           image: Das-Rabindra/limascope:latest
           imagePullPolicy: Never
           ports:
@@ -63,11 +63,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dozzle-service
+  name: limascope-service
 spec:
   type: ClusterIP
   selector:
-    app: dozzle
+    app: limascope
   ports:
     - port: 8080
       targetPort: 8080

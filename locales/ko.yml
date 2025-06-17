@@ -99,7 +99,7 @@ settings:
   show-stopped-containers: 중지된 컨테이너 보기
   about: 정보
   search: Limascope 검색 기능 사용
-  using-version: <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}을 사용하고 있습니다.
+  using-version: <a href="https://limascope.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> {version}을 사용하고 있습니다.
   update-available: >-
     새 버전이 있습니다! <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a>으로 업데이트하세요.

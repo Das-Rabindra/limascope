@@ -8,7 +8,7 @@ By default, Limascope does not output a lot of logs. However, this can be change
 
 ```yaml
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

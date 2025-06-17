@@ -1,5 +1,5 @@
 {
-  "name": "dozzle",
+  "name": "limascope",
   "version": "8.13.0",
   "description": "Realtime log viewer for docker containers.",
   "homepage": "https://github.com/Das-Rabindra/limascope#readme",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Das-Rabindra/limascope.git"
   },
   "license": "ISC",
-  "author": "Amir Raminfar <findamir@gmail.com>",
+  "author": "Rabindra <drabindra978@gmail.com>",
   "scripts": {
     "agent:dev": "DEV=true air -- agent --level debug --agent-addr localhost:7007",
     "watch:frontend": "vite --open http://localhost:3100/",

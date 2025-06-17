@@ -43,9 +43,9 @@ func Test_createRoutes_proxy_happy(t *testing.T) {
 		},
 	})
 	req, err := http.NewRequest("GET", "/", nil)
-	req.Header.Set("Remote-Email", "amir@test.com")
-	req.Header.Set("Remote-Name", "Amir")
-	req.Header.Set("Remote-User", "amir")
+	req.Header.Set("Remote-Email", "rabindra@test.com")
+	req.Header.Set("Remote-Name", "Rabindra")
+	req.Header.Set("Remote-User", "Rabindra")
 	require.NoError(t, err, "NewRequest should not return an error.")
 	rr := httptest.NewRecorder()
 

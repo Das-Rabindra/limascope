@@ -17,11 +17,11 @@ server {
     ...
 
     location / {
-        proxy_pass                  http://<dozzle.container.ip.address>:8080;
+        proxy_pass                  http://<limascope.container.ip.address>:8080;
     }
 
     location /api {
-        proxy_pass                  http://<dozzle.container.ip.address>:8080;
+        proxy_pass                  http://<limascope.container.ip.address>:8080;
 
         proxy_buffering             off;
         proxy_cache                 off;
@@ -40,10 +40,10 @@ http:
       compress: {}
 ```
 
-With this setup, you may find that certain containers do not show logs in dozzle anymore if you open dozzle via traefik (e.g., dozzle.mydomain.com).
-You will also note that the same dozzle instance does show the logs when accessed directly (e.g., localhost:8080).
+With this setup, you may find that certain containers do not show logs in limascope anymore if you open limascope via traefik (e.g., limascope.mydomain.com).
+You will also note that the same limascope instance does show the logs when accessed directly (e.g., localhost:8080).
 
-Containers where this has been observed (non-exhaustive list) are: dozzle, homepage, glances, filebrowser.
+Containers where this has been observed (non-exhaustive list) are: limascope, homepage, glances, filebrowser.
 
 To re-enable the logs to flow, exclude `text/event-stream` from the compression middleware:
 

@@ -22,7 +22,7 @@ label:
   running: Uruchomione
   total-cpu-usage: Całkowite użycie CPU
   total-mem-usage: Całkowite użycie pamięci
-  dozzle-version: Wersja Limascope
+  limascope-version: Wersja Limascope
   containers: Kontenery
   container: Brak kontenerów | 1 kontener | {count} kontenerów
   running-containers: Działające kontenery
@@ -101,8 +101,8 @@ settings:
   options: Opcje
   show-stopped-containers: Pokaż zatrzymane kontenery
   about: Informacje
-  search: Włącz szukanie z dozzle
-  using-version: Używasz <a href="https://dozzle.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> w wersji {version}.
+  search: Włącz szukanie z limascope
+  using-version: Używasz <a href="https://limascope.dev/" target="_blank" rel="noreferrer noopener">Limascope</a> w wersji {version}.
   update-available: >-
     Nowa wersja jest dostępna! Zaktualizuj do <a href="{href}" target="_blank"
     rel="noreferrer noopener">{nextVersion}</a>.

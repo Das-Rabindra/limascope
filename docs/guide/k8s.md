@@ -48,19 +48,19 @@ roleRef:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dozzle
+  name: limascope
 spec:
   selector:
     matchLabels:
-      app: dozzle
+      app: limascope
   template:
     metadata:
       labels:
-        app: dozzle
+        app: limascope
     spec:
       serviceAccountName: pod-viewer
       containers:
-        - name: dozzle
+        - name: limascope
           image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
@@ -72,11 +72,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dozzle-service
+  name: limascope-service
 spec:
   type: ClusterIP
   selector:
-    app: dozzle
+    app: limascope
   ports:
     - port: 8080
       targetPort: 8080
@@ -116,19 +116,19 @@ By default, Limascope will monitor all namespaces in the cluster. If you want to
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dozzle
+  name: limascope
 spec:
   selector:
     matchLabels:
-      app: dozzle
+      app: limascope
   template:
     metadata:
       labels:
-        app: dozzle
+        app: limascope
     spec:
       serviceAccountName: pod-viewer
       containers:
-        - name: dozzle
+        - name: limascope
           image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080
@@ -150,19 +150,19 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dozzle
+  name: limascope
 spec:
   selector:
     matchLabels:
-      app: dozzle
+      app: limascope
   template:
     metadata:
       labels:
-        app: dozzle
+        app: limascope
     spec:
       serviceAccountName: pod-viewer
       containers:
-        - name: dozzle
+        - name: limascope
           image: Das-Rabindra/limascope:latest
           ports:
             - containerPort: 8080

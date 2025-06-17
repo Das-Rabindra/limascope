@@ -4,7 +4,7 @@ dist
 node_modules
 .cache
 static
-dozzle
+limascope
 coverage
 .pnpm-debug.log
 coverage.out

@@ -1,11 +1,11 @@
 services:
-  dozzle-service:
+  limascope-service:
     image: Das-Rabindra/limascope:local-test
     environment:
       - DOZZLE_LEVEL=debug
       - DOZZLE_MODE=swarm
     healthcheck:
-      test: ["CMD", "/dozzle", "healthcheck"]
+      test: ["CMD", "/limascope", "healthcheck"]
       interval: 3s
       timeout: 30s
       retries: 5
@@ -15,10 +15,10 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 
 networks:
-  dozzle:
+  limascope:
     driver: overlay

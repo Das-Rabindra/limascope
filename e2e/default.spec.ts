@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://dozzle:8080/");
+  await page.goto("http://limascope:8080/");
 });
 
 test("has right title", async ({ page }) => {
@@ -23,7 +23,7 @@ test("shortcut for fuzzy search", async ({ page }) => {
 });
 
 test("route by name", async ({ page }) => {
-  await page.goto("http://dozzle:8080/show?name=dozzle");
+  await page.goto("http://limascope:8080/show?name=limascope");
   await expect(page).toHaveURL(/\/container/);
 });
 

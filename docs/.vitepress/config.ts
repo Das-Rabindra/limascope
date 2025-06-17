@@ -2,7 +2,7 @@ import { createRequire } from "module";
 import { defineConfig } from "vitepress";
 
 const require = createRequire(import.meta.url);
-const pkg = require("dozzle/package.json");
+const pkg = require("limascope/package.json");
 
 export default defineConfig({
   lang: "en-US",
@@ -36,7 +36,7 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
-      { text: "Guide", link: "/guide/what-is-dozzle", activeMatch: "/guide/" },
+      { text: "Guide", link: "/guide/what-is-limascope", activeMatch: "/guide/" },
       {
         text: `v${pkg.version}`,
         items: [
@@ -55,7 +55,7 @@ export default defineConfig({
       {
         text: "Introduction",
         items: [
-          { text: "What is Limascope?", link: "/guide/what-is-dozzle" },
+          { text: "What is Limascope?", link: "/guide/what-is-limascope" },
           { text: "Getting Started", link: "/guide/getting-started" },
         ],
       },
@@ -119,6 +119,6 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: "https://dozzle.dev/",
+    hostname: "https://limascope.dev/",
   },
 });

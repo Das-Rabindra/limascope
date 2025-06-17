@@ -14,7 +14,7 @@ import (
 func CreateMultiHostService(embeddedCerts embed.FS, args Args) *docker_support.MultiHostService {
 	var clients []container_support.ClientService
 	if len(args.RemoteHost) > 0 {
-		log.Info().Msg(`Consider using Limascope's remote agent to manage remote hosts. See https://dozzle.dev/guide/agent for more information`)
+		log.Info().Msg(`Consider using Limascope's remote agent to manage remote hosts. See https://limascope.dev/guide/agent for more information`)
 	}
 
 	for _, remoteHost := range args.RemoteHost {

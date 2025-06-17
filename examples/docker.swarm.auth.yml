@@ -1,5 +1,5 @@
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_LEVEL=debug
@@ -13,12 +13,12 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - dozzle
+      - limascope
     deploy:
       mode: global
 
 networks:
-  dozzle:
+  limascope:
     driver: overlay
 secrets:
   users:

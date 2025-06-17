@@ -23,11 +23,11 @@ onMounted(() => {
     class="overflow-hidden rounded-md border border-solid border-gray-200 bg-[#eee] text-[red] drop-shadow-md dark:border-gray-900 dark:bg-[#222]"
   >
     <video muted loop autoplay playsinline poster="../media/poster-dark.png" v-if="isDark">
-      <source src="../media/dozzle-dark.mp4" type="video/mp4" />
+      <source src="../media/limascope-dark.mp4" type="video/mp4" />
       <img src="../media/poster-dark.png" alt="" />
     </video>
     <video muted loop autoplay playsinline poster="../media/poster-light.png" v-else>
-      <source src="../media/dozzle-light.mp4" type="video/mp4" />
+      <source src="../media/limascope-light.mp4" type="video/mp4" />
       <img src="../media/poster-light.png" alt="" />
     </video>
   </div>

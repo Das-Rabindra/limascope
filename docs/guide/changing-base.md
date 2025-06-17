@@ -14,7 +14,7 @@ docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-R
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -34,7 +34,7 @@ Here is an example with Nginx to proxy Limascope with a different base:
 
 ```nginx
 location ^~ /foobar/ {
-    set $upstream_app dozzle;
+    set $upstream_app limascope;
     set $upstream_port 8080;
     set $upstream_proto http;
     proxy_pass $upstream_proto://$upstream_app:$upstream_port;

@@ -8,22 +8,22 @@ By default, Limascope retrieves container names directly from Docker. This is us
 
 ## Custom Names
 
-In cases where modifying the container name itself isn't possible, you can override it by adding a `dev.dozzle.name` label to your container.
+In cases where modifying the container name itself isn't possible, you can override it by adding a `dev.limascope.name` label to your container.
 
 Here is an example using Docker Compose or Docker CLI:
 
 ::: code-group
 
 ```sh
-docker run --label dev.dozzle.name=hello hello-world
+docker run --label dev.limascope.name=hello hello-world
 ```
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: hello-world
     labels:
-      - dev.dozzle.name=hello
+      - dev.limascope.name=hello
 ```
 
 :::

@@ -40,16 +40,16 @@ You will need to mount this file for Limascope to find it. Here is an example:
 ::: code-group
 
 ```sh [cli]
-$ docker run -v /var/run/docker.sock:/var/run/docker.sock -v /path/to/dozzle/data:/data -p 8080:8080 Das-Rabindra/limascope --auth-provider simple
+$ docker run -v /var/run/docker.sock:/var/run/docker.sock -v /path/to/limascope/data:/data -p 8080:8080 Das-Rabindra/limascope --auth-provider simple
 ```
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /path/to/dozzle/data:/data
+      - /path/to/limascope/data:/data
     ports:
       - 8080:8080
     environment:
@@ -70,7 +70,7 @@ Or using Docker secrets:
 
 ```yaml
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_AUTH_PROVIDER=simple
@@ -79,12 +79,12 @@ services:
         target: /data/users.yml
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - dozzle:/data
+      - limascope:/data
 secrets:
   users:
     file: users.yml
 volumes:
-  dozzle:
+  limascope:
 ```
 
 ### Extending Authentication Cookie Lifetime
@@ -94,16 +94,16 @@ By default, Limascope uses session cookies which expire when the browser is clos
 ::: code-group
 
 ```sh [cli]
-$ docker run -v /var/run/docker.sock:/var/run/docker.sock -v /path/to/dozzle/data:/data -p 8080:8080 Das-Rabindra/limascope --auth-provider simple --auth-ttl 48h
+$ docker run -v /var/run/docker.sock:/var/run/docker.sock -v /path/to/limascope/data:/data -p 8080:8080 Das-Rabindra/limascope --auth-provider simple --auth-ttl 48h
 ```
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /path/to/dozzle/data:/data
+      - /path/to/limascope/data:/data
     ports:
       - 8080:8080
     environment:
@@ -161,7 +161,7 @@ $ docker run -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-Rabin
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -245,7 +245,7 @@ services:
       - "--log=true"
       - "--log.level=DEBUG"
 
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     networks:
       - net
@@ -255,11 +255,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.dozzle.rule=Host(`dozzle.example.com`)"
-      - "traefik.http.routers.dozzle.entrypoints=https"
-      - "traefik.http.routers.dozzle.tls=true"
-      - "traefik.http.routers.dozzle.tls.options=default"
-      - "traefik.http.routers.dozzle.middlewares=authelia@docker"
+      - "traefik.http.routers.limascope.rule=Host(`limascope.example.com`)"
+      - "traefik.http.routers.limascope.entrypoints=https"
+      - "traefik.http.routers.limascope.tls=true"
+      - "traefik.http.routers.limascope.tls.options=default"
+      - "traefik.http.routers.limascope.middlewares=authelia@docker"
     expose:
       - 8080
     restart: unless-stopped
@@ -292,7 +292,7 @@ access_control:
   rules:
     - domain: traefik.example.com
       policy: one_factor
-    - domain: dozzle.example.com
+    - domain: limascope.example.com
       policy: one_factor
 
 session:
@@ -324,7 +324,7 @@ Cloudflare Zero Trust is a service for authenticated access to self-hosted softw
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     networks:
       - net

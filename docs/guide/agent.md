@@ -21,7 +21,7 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 Das-Rabindr
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle-agent:
+  limascope-agent:
     image: Das-Rabindra/limascope:latest
     command: agent
     volumes:
@@ -53,7 +53,7 @@ docker run -p 8080:8080 Das-Rabindra/limascope:latest --remote-agent agent-ip:70
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     environment:
       - DOZZLE_REMOTE_AGENT=agent:7007
@@ -90,11 +90,11 @@ To set up healthcheck, use the `healthcheck` subcommand. Here is an example:
 
 ```yml
 services:
-  dozzle-agent:
+  limascope-agent:
     image: Das-Rabindra/limascope:latest
     command: agent
     healthcheck:
-      test: ["CMD", "/dozzle", "healthcheck"]
+      test: ["CMD", "/limascope", "healthcheck"]
       interval: 5s
       retries: 5
       start_period: 5s
@@ -117,7 +117,7 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -p 7007:7007 Das-Rabindr
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle-agent:
+  limascope-agent:
     image: Das-Rabindra/limascope:latest
     command: agent
     environment:
@@ -138,7 +138,7 @@ You can set up filters for the agent to limit the containers it can access. Thes
 
 ```yaml
 services:
-  dozzle-agent:
+  limascope-agent:
     image: Das-Rabindra/limascope:latest
     command: agent
     environment:

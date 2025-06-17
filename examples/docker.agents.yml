@@ -1,5 +1,5 @@
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     command: agent
     environment:

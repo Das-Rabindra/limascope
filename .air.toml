@@ -4,8 +4,8 @@ tmp_dir = "tmp"
 
 [build]
 args_bin = []
-bin = "./tmp/dozzle.exe"
-cmd = "go build -o ./tmp/dozzle.exe ."
+bin = "./tmp/limascope.exe"
+cmd = "go build -o ./tmp/limascope.exe ."
 delay = 1000
 exclude_dir = [
   "assets",

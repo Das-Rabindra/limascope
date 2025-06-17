@@ -351,15 +351,15 @@ func (d *DockerClient) ContainerExec(ctx context.Context, id string, cmd []strin
 
 func newContainer(c docker.Summary, host string) container.Container {
 	name := "no name"
-	if c.Labels["dev.dozzle.name"] != "" {
-		name = c.Labels["dev.dozzle.name"]
+	if c.Labels["dev.limascope.name"] != "" {
+		name = c.Labels["dev.limascope.name"]
 	} else if len(c.Names) > 0 {
 		name = strings.TrimPrefix(c.Names[0], "/")
 	}
 
 	group := ""
-	if c.Labels["dev.dozzle.group"] != "" {
-		group = c.Labels["dev.dozzle.group"]
+	if c.Labels["dev.limascope.group"] != "" {
+		group = c.Labels["dev.limascope.group"]
 	}
 	return container.Container{
 		ID:      c.ID[:12],
@@ -377,15 +377,15 @@ func newContainer(c docker.Summary, host string) container.Container {
 
 func newContainerFromJSON(c docker.InspectResponse, host string) container.Container {
 	name := "no name"
-	if c.Config.Labels["dev.dozzle.name"] != "" {
-		name = c.Config.Labels["dev.dozzle.name"]
+	if c.Config.Labels["dev.limascope.name"] != "" {
+		name = c.Config.Labels["dev.limascope.name"]
 	} else if len(c.Name) > 0 {
 		name = strings.TrimPrefix(c.Name, "/")
 	}
 
 	group := ""
-	if c.Config.Labels["dev.dozzle.group"] != "" {
-		group = c.Config.Labels["dev.dozzle.group"]
+	if c.Config.Labels["dev.limascope.group"] != "" {
+		group = c.Config.Labels["dev.limascope.group"]
 	}
 
 	container := container.Container{

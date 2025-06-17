@@ -15,7 +15,7 @@ importers:
         specifier: ^5.2.6
         version: 5.2.6
     devDependencies:
-      dozzle:
+      limascope:
         specifier: workspace:*
         version: link:..
 

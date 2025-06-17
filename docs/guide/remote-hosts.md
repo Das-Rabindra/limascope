@@ -29,7 +29,7 @@ $ docker run -v /var/run/docker.sock:/var/run/docker.sock -v /path/to/certs:/cer
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -63,7 +63,7 @@ $ docker run -p 8080:8080 Das-Rabindra/limascope --remote-host tcp://123.1.1.1:2
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     ports:
       - 8080:8080
@@ -90,7 +90,7 @@ docker run --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 Das-R
 
 ```yaml [docker-compose.yml]
 services:
-  dozzle:
+  limascope:
     image: Das-Rabindra/limascope:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

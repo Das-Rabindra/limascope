@@ -27,7 +27,7 @@ type EventGenerator struct {
 	ctx         context.Context
 }
 
-var ErrBadHeader = fmt.Errorf("dozzle/docker: unable to read header")
+var ErrBadHeader = fmt.Errorf("limascope/docker: unable to read header")
 
 type LogReader interface {
 	Read() (string, StdType, error)

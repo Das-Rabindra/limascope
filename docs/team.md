@@ -12,8 +12,8 @@ import {
 
 const members = [
   {
-    avatar: 'https://www.github.com/amir20.png',
-    name: 'Amir Raminfar',
+    avatar: '',
+    name: 'Rabindra',
     title: 'Creator',
     links: [
       { icon: 'github', link: 'https://github.com/Das-Rabindra' },
@@ -29,7 +29,7 @@ const members = [
       Team
     </template>
     <template #lead>
-      Dozzle is created and maintained by the following people.
+      limascope is created and maintained by the following people.
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
